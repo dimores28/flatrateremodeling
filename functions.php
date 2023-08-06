@@ -2,6 +2,23 @@
 // use PHPMailer\PHPMailer\PHPMailer;
 // use PHPMailer\PHPMailer\SMTP;
 
+add_action( 'wp_enqueue_scripts', function() {
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css');
+
+	// // отменяем зарегистрированный jQuery
+	// wp_deregister_script('jquery-core');
+	// wp_deregister_script('jquery');
+
+	// // регистрируем
+	// wp_register_script( 'jquery-core', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js?_v=20230612142449', false, null, true );
+	// wp_register_script( 'jquery', false, array('jquery-core'), null, true );
+
+	// // подключаем
+	// wp_enqueue_script( 'jquery' );
+
+	// wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.min.js', array('jquery'), 'null', true );
+});
+
 
 add_theme_support('post-thumbnails');
 add_theme_support( 'title-tag' );
