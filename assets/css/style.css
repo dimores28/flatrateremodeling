@@ -9,7 +9,11 @@
    margin: 0;
  }
  
-
+ html,
+ body {
+   position: relative;
+   height: 100%;
+ }
  
  main {
    display: block;
@@ -309,4 +313,135 @@
          border: 1px solid #fff;
          background: transparent;
          color: #fff;
+      }
+
+      /*--------------------------------------------------------------------------------------------------------*/
+      .hero-section {
+        position: relative;
+        height: 100%;
+      }
+  
+      .main-slider {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+  
+      /* Стрелки */
+      .main-slider .swiper-button-prev,
+      .main-slider .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        transition: all 0.2s ease-in;
+      }
+  
+      .main-slider .swiper-button-prev::after,
+      .main-slider .swiper-button-next::after {
+        font-size: 18px;
+        font-weight: 900;
+        color: #fff;
+      }
+  
+      .main-slider .swiper-button-prev:hover,
+      .main-slider .swiper-button-next:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+  
+      /* Пагинация */
+      .main-slider .swiper-pagination {
+        bottom: 30px;
+      }
+  
+      /* Буллеты */
+      .main-slider .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        line-height: 20px;
+        font-size: 14px;
+        border-radius: 0;
+        border: 1px solid #e5e5e5;
+        background: #aaa;
+        transition: all 0.2s ease-in;
+        opacity: 0.8;
+      }
+  
+      .main-slider .swiper-pagination-bullet-active {
+        background: #000;
+      }
+  
+      .main-slider__img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+  
+      .main-slider__img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .gallery__sliders {
+        position: relative;
+        display: flex;
+        gap: 40px;
+      }
+  
+      .gallery-slider {
+        width: 100%;
+        height: 448px;
+      }
+  
+      .gallery-slider__slide {
+        position: relative;
+      }
+  
+      .gallery-slider__text {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        color: #fff;
+        font-family: montserrat, Sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        padding: 15px;
+        background-color: #0000009e;
+        display: inline-block;
+        z-index: 2;
+      }
+  
+      .gallery-slider__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
       }

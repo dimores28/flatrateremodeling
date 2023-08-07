@@ -1,316 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FLATRATE</title>
 
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+  <style>
+    .hero {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 23vh;
+      margin-top: 10%;
+    }
 
-      .hero-section {
-        position: relative;
-        height: 100%;
-      }
+    .hero__left {
+      background-color: #000000ad;
+      max-width: 350px;
+    }
 
-      .main-slider {
-        width: 100%;
-        height: 100%;
-      }
+    .hero__title-wrap {
+      background-color: #000000c9;
+      border-bottom: 2px solid;
+      border-color: rgb(187, 148, 91);
+      padding: 15px;
+    }
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+    .hero__title {
+      color: #fff;
+      font-family: raleway, Sans-serif;
+      font-size: 29px;
+      text-align: left;
+      font-weight: 600;
+      padding: 7px;
+      line-height: 40px;
+      max-width: 300px;
+      margin: 0;
+    }
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+    .hero__block {
+      text-align: left;
+      line-height: 25px;
+      letter-spacing: 0px;
+      font-weight: 400;
+      padding: 15px 15px 30px 15px;
+    }
 
-      /* Стрелки */
-      .main-slider .swiper-button-prev,
-      .main-slider .swiper-button-next {
-        width: 40px;
-        height: 40px;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        transition: all 0.2s ease-in;
-      }
-      .main-slider .swiper-button-prev::after,
-      .main-slider .swiper-button-next::after {
-        font-size: 18px;
-        font-weight: 900;
-        color: #fff;
-      }
+    .hero__text {
+      color: #fff;
+      font-family: raleway, Sans-serif;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
 
-      .main-slider .swiper-button-prev:hover,
-      .main-slider .swiper-button-next:hover {
-        background: rgba(0, 0, 0, 1);
-      }
+    .hero__linck {
+      line-height: 25px;
+      letter-spacing: 0px;
+      font-weight: 400;
+      border-color: rgb(255, 255, 255);
+      border-style: solid;
+      border-width: 1px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-family: raleway, Sans-serif;
+      font-size: 16px;
+      background-color: #61ce7000;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s ease-in;
+    }
 
-      /* Пагинация */
-      .main-slider .swiper-pagination {
-        bottom: 30px;
-      }
-      /* Буллеты */
-      .main-slider .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        line-height: 20px;
-        font-size: 14px;
-        border-radius: 0;
-        border: 1px solid #e5e5e5;
-        background-color: #aaa;
-        transition: all 0.2s ease-in;
-      }
+    .hero__linck:hover {
+      background-color: #000;
+    }
 
-      /* .main-slider .swiper-pagination-bullet:hover {
-        background-color: #000;
-      } */
+    .hero__right {
+      width: 100%;
+      max-width: 350px;
+    }
+  </style>
+</head>
 
-      .main-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background-color: #000;
-      }
-
-      .main-slider__img {
-        position: relative;
-        height: 100%;
-        width: 100%;
-      }
-
-      .main-slider__img img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .gallery__sliders {
-        position: relative;
-        display: flex;
-        gap: 40px;
-      }
-
-      .gallery-slider {
-        width: 100%;
-        height: 448px;
-      }
-
-      .gallery-slider__slide {
-        position: relative;
-      }
-
-      .gallery-slider__text {
-        position: absolute;
-        top: -15px;
-        left: 0;
-        color: #fff;
-        font-family: montserrat,Sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        padding: 15px;
-        background-color: #0000009e;
-        display: inline-block;
-        z-index: 2;
-      }
-
-      .gallery-slider__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-      }
-
-    </style>
-  </head>
-  <body>
-    <div class="hero-section">
-      <div class="hero-forms"></div>
-      <!-- Swiper -->
-      <div class="swiper main-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
+<body>
+  <section class="hero-section">
+    <!-- Swiper -->
+    <div class="swiper main-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <div class="hero">
+              <div class="hero__left animate__animated animate__fadeInLeft">
+                <div class="hero__title-wrap">
+                  <h1 class="hero__title">Residential & Commercial remodeling in Los Angeles</h1>
+                </div>
+                <div class="hero__block">
+                  <div class="hero__text">
+                    We have the experience,passion and resources to make your project come to life while running
+                    smoothly
+                  </div>
+                  <a href="#" class="hero__linck">Contact Us</a>
+                </div>
+              </div>
+              <div class="hero__right animate__animated animate__fadeInRight">
+                <div class="feedback feedback-black">
+                  <form class="feedback__form">
+                    <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+                    <input class="form-control" name="yourEmail" type="email" placeholder="Name"
+                      aria-label="your email" />
+                    <input class="form-control" name="yourPhone" type="text" placeholder="Name"
+                      aria-label="your phone" />
+                    <textarea class="form-control" name="yourMessage" placeholder="Message"
+                      aria-label="your message"></textarea>
+                    <input type="submit" class="btn form-btn" value="Send" />
+                  </form>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide1.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide3.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide4.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide5.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide6.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide7.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide8.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide9.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide10.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="main-slider__img">
-              <img
-                src="assets/img/slide11.jpg"
-                width="1348"
-                height="520"
-                alt="slide"
-              />
-            </div>
+            <img src="assets/img/slide.jpg" width="1348" height="520" alt="slide" />
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+
+            <img src="assets/img/slide1.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide3.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide4.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide5.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide6.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide7.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide8.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide9.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide10.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main-slider__img">
+            <img src="assets/img/slide11.jpg" width="1348" height="520" alt="slide" />
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery__sliders">
+      <div class="swiper gallery-slider">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+        </div>
+      </div>
+
+      <div class="swiper gallery-slider">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="gallery-slider__slide swiper-slide">
+            <h2 class="gallery-slider__text">Text 1</h2>
+            <img src="assets/img/ms1.jpg" class="gallery-slider__img" alt="slide image">
+          </div>
+          <div class="gallery-slider__slide swiper-slide">
+            <h2 class="gallery-slider__text">Text 2</h2>
+            <img src="assets/img/ms2.jpg" class="gallery-slider__img" alt="slide image">
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <section class="gallery">
-      <h2>Gallery</h2>
-
-      <div class="gallery__sliders">
-        <div class="swiper gallery-slider">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-          </div>
-        </div>
-
-        <div class="swiper gallery-slider">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="gallery-slider__slide swiper-slide">
-              <h2 class="gallery-slider__text">Text 1</h2>
-              <img src="assets/img/ms1.jpg" class="gallery-slider__img" alt="slide image">
-            </div>
-            <div class="gallery-slider__slide swiper-slide">
-              <h2 class="gallery-slider__text">Text 2</h2>
-              <img src="assets/img/ms2.jpg" class="gallery-slider__img" alt="slide image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <main class="main">
-      <!-- <div class="feedback feedback-black">
+  <main class="main">
+    <!-- <div class="feedback feedback-black">
         <form class="feedback__form">
           <input
             class="form-control"
@@ -342,53 +254,79 @@
           <input type="submit" class="btn form-btn" value="Send" />
         </form>
       </div> -->
-    </main>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".main-slider", {
-        loop: true,
+  </main>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".main-slider", {
+      // loop: true,
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + '</span>';
         },
+      },
 
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
+      effect: "fade",
 
-        effect: "fade",
+      autoplay: {
+        // Пауза между прокруткой
+        delay: 3000,
+        // Закончить на последнем слайде
+        stopOnLastSlide: false,
+        // Отключить после ручного переключения
+        disableOnInteraction: true,
+      },
 
-        autoplay: {
-          // Пауза между прокруткой
-          delay: 3000,
-          // Закончить на последнем слайде
-          stopOnLastSlide: false,
-          // Отключить после ручного переключения
-          disableOnInteraction: true,
-        },
+      // Скорость
+      speed: 800,
+      on: {
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
 
-        // Скорость
-        speed: 800,
-      });
+          });
+
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
+      },
+    });
+
+    swiper.on('slideChange', function () {
+      const hero = document.querySelector('.hero');
+      document.querySelector('.hero').remove();
+
+      setTimeout(function(){
+        document.querySelector('.swiper-slide-active .main-slider__img').appendChild(hero);
+      }, 200);
+    });
 
 
-      const gallerySlider = new Swiper('.gallery-slider', {
-        loop: true,
+    const gallerySlider = new Swiper('.gallery-slider', {
+      loop: true,
 
-        autoplay: {
-          // Пауза между прокруткой
-          delay: 3000,
-          // Закончить на последнем слайде
-          stopOnLastSlide: false,
-          // Отключить после ручного переключения
-          disableOnInteraction: true,
-        },
+      autoplay: {
+        // Пауза между прокруткой
+        delay: 3000,
+        // Закончить на последнем слайде
+        stopOnLastSlide: false,
+        // Отключить после ручного переключения
+        disableOnInteraction: true,
+      },
 
-        // Скорость
-        speed: 800,
-      });
-    </script>
-  </body>
+      // Скорость
+      speed: 800,
+    });
+  </script>
+</body>
+
 </html>
