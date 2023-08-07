@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLATRATE</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway:wght@100;600&family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <style>
    
@@ -18,6 +23,128 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__contacts">
+      <ul class="header__left">
+        <li>
+          <a href="#" target="_blank">
+            <span>
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+            </span>
+             Agoura Rd Unit 102-406 Calabasas
+          </a>
+        </li>
+        <li class="ceil-border">
+          <a href="#" target="_blank">
+            <span>
+							<i aria-hidden="true" class="fas fa-envelope"></i>
+            </span>
+            tal@flatrateremodeling.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:(888) 608-3330" target="_blank">
+            <span>
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>
+            </span>
+            Call Us
+          </a>
+        </li>
+      </ul>
+
+      <ul class="header__right">
+        <li>
+          <a href="#" class="" target="_blank">
+						<i class="fab fa-facebook-f"></i>					
+          </a>
+        </li>
+        <li>
+          <a href="#" class="" target="_blank">
+						<i class="fab fa-yelp"></i>			
+          </a>
+        </li>
+        <li>
+          <a href="#" class="" target="_blank">
+						<i class="fab fa-google"></i>			
+          </a>
+        </li>
+        <li>
+          <a href="#" class="" target="_blank">
+						<i class="fab fa-instagram"></i>				
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__navigaton">
+      <div class="header__logo">
+        <a href="#">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">ABOUT US</a>
+          </li>
+          <li class="menu__item menu__item_list dropdown">
+            <a href="#" class="dropbtn">SERVICES <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="#">
+                  Kitchen Design & Remodeling
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">
+                  Energy Efficient Products
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">
+                  Sun Rooms & Patio Enclosures
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">
+                  Bathroom Design & Remodeling
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">
+                  General Home Renovations
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">
+                  Additions & New Construction
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#">Testimonials</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">GALLERY</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">BLOG</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Contact us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Locations</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="main">
     <!-- <div class="feedback feedback-black">
@@ -53,47 +180,47 @@
         </form>
       </div> -->
 
-      <section class="gallery">
-        <h2 class="gallery__header">Gallery</h2>
-        <div class="gallery__actions">
-          <a href="#" class="gallery__linck">View Gallery</a>
+<section class="gallery">
+  <h2 class="gallery__header">Gallery</h2>
+  <div class="gallery__actions">
+    <a href="#" class="gallery__linck">View Gallery</a>
+  </div>
+
+  <div class="gallery__sliders">
+    <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="gallery-slider__slide swiper-slide">
+          <h2 class="gallery-slider__text">Mission Viejo</h2>
+          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms1.jpg" class="gallery-slider__img" alt="slide image">
         </div>
-    
-        <div class="gallery__sliders">
-          <div class="swiper gallery-slider">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Mission Viejo</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms1.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Irvine</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms2.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-            </div>
-          </div>
-    
-          <div class="swiper gallery-slider">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Laguna Hills</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms3.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Huntington Beach</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms4.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-            </div>
-          </div>
+        <div class="gallery-slider__slide swiper-slide">
+          <h2 class="gallery-slider__text">Irvine</h2>
+          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms2.jpg" class="gallery-slider__img" alt="slide image">
         </div>
-      </section>
-      
+      </div>
+    </div>
+
+    <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="gallery-slider__slide swiper-slide">
+          <h2 class="gallery-slider__text">
+            <a href="#">Laguna Hills</a>
+          </h2>
+          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms3.jpg" class="gallery-slider__img" alt="slide image">
+        </div>
+        <div class="gallery-slider__slide swiper-slide">
+          <h2 class="gallery-slider__text">
+            <a href="#">Huntington Beach</a>
+          </h2>
+          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms4.jpg" class="gallery-slider__img" alt="slide image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="consultation">
     <h2 class="consultation__heding">
       Schedule a Free Consultation
@@ -110,6 +237,8 @@
       </form>
     </div>
 </section>
+
+
     
   </main>
   <script src="assets/js/swiper-bundle.min.js"></script>
@@ -129,6 +258,20 @@
       // Скорость
       speed: 800,
     });
+
+    function getBodyScrollTop()
+    {
+      return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      let pageYOffset = 10;
+      if (getBodyScrollTop() > 50) {
+        document.querySelector('.header').classList.add('active')
+      } else {
+        document.querySelector('.header').classList.remove('active')
+      }
+    })
   </script>
 </body>
 

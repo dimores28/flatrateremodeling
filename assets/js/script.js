@@ -66,3 +66,14 @@ const gallerySlider = new Swiper('.gallery-slider', {
     // Скорость
     speed: 800,
   });
+
+
+window.addEventListener('scroll', function(e) {
+  console.log(e);
+  let pageYOffset = 10;
+  if (pageYOffset > 50) {
+    document.querySelector('.header').classList.add('active')
+  } else {
+    document.querySelector('.header').classList.remove('active')
+  }
+})
