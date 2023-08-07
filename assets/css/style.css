@@ -446,7 +446,7 @@ input::placeholder {
 @media (max-width: 496px){
   .gallery__sliders {
     padding: 15px;
-    gap: 20px
+    gap: 20px;
   }
 
   .gallery-slider {
