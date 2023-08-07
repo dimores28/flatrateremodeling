@@ -6,20 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FLATRATE</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway:wght@100;600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Raleway:wght@100;600&family=Roboto&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
   <style>
+    .get-started {
+      background-color: #bb945b;
+      padding: 40px 15px;
+    }
 
+    .get-started__content {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
+    .get-started__text {
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #fff;
+      font-family: Montserrat, Sans-serif;
+    }
+
+    .get-started__btn {
+      font-family: Montserrat, Sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background-color: #ffffff00;
+      border: 1px solid #fff;
+      border-radius: 0 0 0 0;
+      padding: 12px 45px;
+      color: #fff;
+    }
+
+    .get-started__btn:hover {
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -30,15 +70,15 @@
         <li>
           <a href="#" target="_blank">
             <span>
-							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+              <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
             </span>
-             Agoura Rd Unit 102-406 Calabasas
+            Agoura Rd Unit 102-406 Calabasas
           </a>
         </li>
         <li class="ceil-border">
           <a href="#" target="_blank">
             <span>
-							<i aria-hidden="true" class="fas fa-envelope"></i>
+              <i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
             tal@flatrateremodeling.com
           </a>
@@ -46,7 +86,7 @@
         <li>
           <a href="tel:(888) 608-3330" target="_blank">
             <span>
-							<i aria-hidden="true" class="fas fa-phone-alt"></i>
+              <i aria-hidden="true" class="fas fa-phone-alt"></i>
             </span>
             Call Us
           </a>
@@ -56,22 +96,22 @@
       <ul class="header__right">
         <li>
           <a href="#" class="" target="_blank">
-						<i class="fab fa-facebook-f"></i>					
+            <i class="fab fa-facebook-f"></i>
           </a>
         </li>
         <li>
           <a href="#" class="" target="_blank">
-						<i class="fab fa-yelp"></i>			
+            <i class="fab fa-yelp"></i>
           </a>
         </li>
         <li>
           <a href="#" class="" target="_blank">
-						<i class="fab fa-google"></i>			
+            <i class="fab fa-google"></i>
           </a>
         </li>
         <li>
           <a href="#" class="" target="_blank">
-						<i class="fab fa-instagram"></i>				
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
       </ul>
@@ -80,12 +120,12 @@
     <div class="header__navigaton">
       <button class="burger-btn">
         <i class="fas fa-bars toggle__icon--close"></i>
-        <i class="fas fa-times toggle__icon--open" style="display: none;"></i>
+        <i class="fas fa-times toggle__icon--open" style="display: none"></i>
       </button>
 
       <div class="header__logo">
         <a href="#">
-          <img src="assets/img/logo.png" alt="logo">
+          <img src="assets/img/logo.png" alt="logo" />
         </a>
       </div>
 
@@ -98,37 +138,26 @@
             <a href="#">About Us</a>
           </li>
           <li class="menu__item menu__item_list dropdown">
-            <a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
+            <a href="#" class="dropbtn">Services
+              <i class="fas fa-caret-down" style="margin-left: 4px"></i></a>
             <ul class="submenu">
               <li class="submenu__item">
-                <a href="#">
-                  Kitchen Design & Remodeling
-                </a>
+                <a href="#"> Kitchen Design & Remodeling </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
-                  Energy Efficient Products
-                </a>
+                <a href="#"> Energy Efficient Products </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
-                  Sun Rooms & Patio Enclosures
-                </a>
+                <a href="#"> Sun Rooms & Patio Enclosures </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
-                  Bathroom Design & Remodeling
-                </a>
+                <a href="#"> Bathroom Design & Remodeling </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
-                  General Home Renovations
-                </a>
+                <a href="#"> General Home Renovations </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
-                  Additions & New Construction
-                </a>
+                <a href="#"> Additions & New Construction </a>
               </li>
             </ul>
           </li>
@@ -144,7 +173,7 @@
           <li class="menu__item">
             <a href="#">Contact us</a>
           </li>
-          <li class="menu__item" style="padding-bottom: 20px;">
+          <li class="menu__item" style="padding-bottom: 20px">
             <a href="#">Locations</a>
           </li>
         </ul>
@@ -157,202 +186,167 @@
   </header>
 
   <main class="main">
-    <!-- <div class="feedback feedback-black">
-        <form class="feedback__form">
-          <input
-            class="form-control"
-            name="yourName"
-            type="text"
-            placeholder="Name"
-            aria-label="your name"
-          />
-          <input
-            class="form-control"
-            name="yourEmail"
-            type="email"
-            placeholder="Name"
-            aria-label="your email"
-          />
-          <input
-            class="form-control"
-            name="yourPhone"
-            type="text"
-            placeholder="Name"
-            aria-label="your phone"
-          />
-          <textarea
-            class="form-control"
-            name="yourMessage"
-            placeholder="Message"
-            aria-label="your message"
-          ></textarea>
-          <input type="submit" class="btn form-btn" value="Send" />
-        </form>
-      </div> -->
-
-<section class="gallery">
-  <h2 class="gallery__header">Gallery</h2>
-  <div class="gallery__actions">
-    <a href="#" class="gallery__linck">View Gallery</a>
-  </div>
-
-  <div class="gallery__sliders">
-    <div class="swiper gallery-slider">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="gallery-slider__slide swiper-slide">
-          <h2 class="gallery-slider__text">Mission Viejo</h2>
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms1.jpg" class="gallery-slider__img" alt="slide image">
-        </div>
-        <div class="gallery-slider__slide swiper-slide">
-          <h2 class="gallery-slider__text">Irvine</h2>
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms2.jpg" class="gallery-slider__img" alt="slide image">
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper gallery-slider">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="gallery-slider__slide swiper-slide">
-          <h2 class="gallery-slider__text">
-            <a href="#">Laguna Hills</a>
-          </h2>
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms3.jpg" class="gallery-slider__img" alt="slide image">
-        </div>
-        <div class="gallery-slider__slide swiper-slide">
-          <h2 class="gallery-slider__text">
-            <a href="#">Huntington Beach</a>
-          </h2>
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms4.jpg" class="gallery-slider__img" alt="slide image">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="consultation">
-    <h2 class="consultation__heding">
-      Schedule a Free Consultation
-      <span></span>
-    </h2>
-  
-    <div class="feedback">
-      <form class="feedback__form"  style="max-width: 700px; margin: 50px auto;">
-          <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name">
-          <input class="form-control" name="yourEmail" type="email" placeholder="Email" aria-label="your email">
-          <input class="form-control" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone">
-          <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-          <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px;">
+    <div class="feedback feedback-black">
+      <form class="feedback__form">
+        <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+        <input class="form-control" name="yourEmail" type="email" placeholder="Name" aria-label="your email" />
+        <input class="form-control" name="yourPhone" type="text" placeholder="Name" aria-label="your phone" />
+        <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+        <input type="submit" class="btn form-btn" value="Send" />
       </form>
     </div>
-</section>
 
-<section class="services">
-  <h2 class="consultation__heding services__heading">
-    Products & Services
-    <span></span>
-  </h2>
-
-  <div class="services__content">
-
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s1.jpg"  alt="service image">
-        </a>
+    <section class="gallery">
+      <h2 class="gallery__header">Gallery</h2>
+      <div class="gallery__actions">
+        <a href="#" class="gallery__linck">View Gallery</a>
       </div>
-      <h3 class="services__title">
-        <a href="#">
-          Complete Kitchen Design & Remodeling
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s2.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="#">
-          Energy Efficient Products
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s3.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="#">
-          Sun Rooms & Patio Enclosures
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s4.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="#">
-          Complete Bathroom Design & Remodeling
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s5.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="#">
-          General Home Renovations
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="#"> 
-          <img src="assets/img/s6.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="#">
-          Additions & New Construction
-        </a>
-      </h3>
-      <a href="#" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
 
-  </div>
+      <div class="gallery__sliders">
+        <div class="swiper gallery-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="gallery-slider__slide swiper-slide">
+              <h2 class="gallery-slider__text">Mission Viejo</h2>
+              <img
+                src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms1.jpg"
+                class="gallery-slider__img" alt="slide image" />
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+              <h2 class="gallery-slider__text">Irvine</h2>
+              <img
+                src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms2.jpg"
+                class="gallery-slider__img" alt="slide image" />
+            </div>
+          </div>
+        </div>
 
-</section>
+        <div class="swiper gallery-slider">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="gallery-slider__slide swiper-slide">
+              <h2 class="gallery-slider__text">
+                <a href="#">Laguna Hills</a>
+              </h2>
+              <img
+                src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms3.jpg"
+                class="gallery-slider__img" alt="slide image" />
+            </div>
+            <div class="gallery-slider__slide swiper-slide">
+              <h2 class="gallery-slider__text">
+                <a href="#">Huntington Beach</a>
+              </h2>
+              <img
+                src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/ms4.jpg"
+                class="gallery-slider__img" alt="slide image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="consultation">
+      <h2 class="consultation__heding">
+        Schedule a Free Consultation
+        <span></span>
+      </h2>
 
-    
+      <div class="feedback">
+        <form class="feedback__form" style="max-width: 700px; margin: 50px auto">
+          <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+          <input class="form-control" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
+          <input class="form-control" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
+          <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+          <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px" />
+        </form>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2 class="consultation__heding services__heading">
+        Products & Services
+        <span></span>
+      </h2>
+
+      <div class="services__content">
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s1.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> Complete Kitchen Design & Remodeling </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s2.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> Energy Efficient Products </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s3.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> Sun Rooms & Patio Enclosures </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s4.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> Complete Bathroom Design & Remodeling </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s5.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> General Home Renovations </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+        <div class="services__item">
+          <div class="services__img">
+            <a href="#">
+              <img src="assets/img/s6.jpg" alt="service image" />
+            </a>
+          </div>
+          <h3 class="services__title">
+            <a href="#"> Additions & New Construction </a>
+          </h3>
+          <a href="#" class="services__details"> MORE DETAILS </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="get-started">
+      <div class="get-started__content">
+        <p class="get-started__text">
+          Lets Get Started on Your Next Project!
+        </p>
+
+        <button class="get-started__btn">Start Here</button>
+      </div>
+    </div>
   </main>
   <footer class="footer" id="contacts" data-watch="navigator">
     <div class="footer__body">
@@ -365,19 +359,22 @@
         <div class="last-post__item">
           <div class="last-post__data">20 July</div>
           <p class="post__title">
-            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
+            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for
+            2023
           </p>
         </div>
         <div class="last-post__item">
           <div class="last-post__data">20 July</div>
           <p class="post__title">
-            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
+            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for
+            2023
           </p>
         </div>
         <div class="last-post__item">
           <div class="last-post__data">20 July</div>
           <p class="post__title">
-            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
+            Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for
+            2023
           </p>
         </div>
       </div>
@@ -392,7 +389,7 @@
         <a href="mailto:tal@flatrateremodeling.com" class="contacts__link">
           <span>tal@flatrateremodeling.com</span>
         </a>
-  
+
         <a href="#">Privacy Policy</a>
       </div>
       <div class="instagram-post">
@@ -407,7 +404,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class="copyright">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
@@ -420,7 +417,7 @@
   </footer>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script>
-    const gallerySlider = new Swiper('.gallery-slider', {
+    const gallerySlider = new Swiper(".gallery-slider", {
       loop: true,
 
       autoplay: {
@@ -436,42 +433,55 @@
       speed: 800,
     });
 
-    function getBodyScrollTop()
-    {
-      return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+    function getBodyScrollTop() {
+      return (
+        self.pageYOffset ||
+        (document.documentElement && document.documentElement.scrollTop) ||
+        (document.body && document.body.scrollTop)
+      );
     }
 
-    window.addEventListener('scroll', function(e) {
+    window.addEventListener("scroll", function (e) {
       let pageYOffset = 10;
       if (getBodyScrollTop() > 50) {
-        document.querySelector('.header').classList.add('active')
+        document.querySelector(".header").classList.add("active");
       } else {
-        document.querySelector('.header').classList.remove('active')
+        document.querySelector(".header").classList.remove("active");
       }
-    })
-
-    document.querySelector('.burger-btn').addEventListener('click', function(){
-      document.querySelector('.header__navigaton').classList.toggle('_active');
-      setTimeout(function(){
-        const close = document.querySelector('.toggle__icon--close');
-        const open = document.querySelector('.toggle__icon--open');
-        const active = document.querySelector('.header__navigaton._active');
-
-        if(active){
-          close.style.display = 'none';
-          open.style.display = 'block';
-        }
-        else {
-          close.style.display = 'block';
-          open.style.display = 'none';
-        }
-
-      }, 10);
     });
 
-    document.querySelector('.dropdown').addEventListener('click', function(){
-      document.querySelector('.submenu').classList.toggle('_active');
-    });
+    document
+      .querySelector(".burger-btn")
+      .addEventListener("click", function () {
+        document
+          .querySelector(".header__navigaton")
+          .classList.toggle("_active");
+        setTimeout(function () {
+          const close = document.querySelector(".toggle__icon--close");
+          const open = document.querySelector(".toggle__icon--open");
+          const active = document.querySelector(".header__navigaton._active");
+
+          if (active) {
+            close.style.display = "none";
+            open.style.display = "block";
+          } else {
+            close.style.display = "block";
+            open.style.display = "none";
+          }
+        }, 10);
+      });
+
+    document
+      .querySelector(".dropdown")
+      .addEventListener("click", function () {
+        document.querySelector(".submenu").classList.toggle("_active");
+      });
+
+    document
+      .querySelector(".get-started__btn")
+      .addEventListener("click", function () {
+        // popup.show();
+      });
   </script>
 </body>
 
