@@ -3,6 +3,7 @@
 // use PHPMailer\PHPMailer\SMTP;
 
 add_action( 'wp_enqueue_scripts', function() {
+	// wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css');
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/style.css');
 
 	// // отменяем зарегистрированный jQuery
@@ -16,7 +17,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	// // подключаем
 	// wp_enqueue_script( 'jquery' );
 
-	// wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/app.min.js', array('jquery'), 'null', true );
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), 'null', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array('swiper'), 'null', true );
 });
 
 
