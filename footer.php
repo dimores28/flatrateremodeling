@@ -2,7 +2,7 @@
 <footer class="footer" id="contacts" data-watch="navigator">
   <div class="footer__body">
     <div class="logo">
-      <img src="./assets/img/logo.png" alt="logo" class="logo__img" />
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
       <span>license # 996391</span>
     </div>
     <div class="last-post">
