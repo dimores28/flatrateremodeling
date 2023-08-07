@@ -729,6 +729,7 @@ input::placeholder {
 
 .header.active {
   background: rgba(0, 0, 0, 0.59);
+  margin-top: -40px;
 }
 
 .header__left {
@@ -773,6 +774,10 @@ input::placeholder {
 }
 
 @media (max-width: 1024px) {
+  .header.active {
+    margin-top: 0px;
+  }
+
   .header__contacts {
     display: none;
   }
@@ -885,7 +890,6 @@ input::placeholder {
 
 .copyright {
   background-color: #191919;
-  width: 100%;
 }
 
 .contact {
