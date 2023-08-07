@@ -67,11 +67,18 @@ const gallerySlider = new Swiper('.gallery-slider', {
     speed: 800,
 });
 
+const header = document.querySelector('.header');
+const body = document.querySelector('body');
+body.style.paddingTop = `${header.offsetHeight}px`;
+
+function getBodyScrollTop()
+{
+  return self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop);
+}
+
 
 window.addEventListener('scroll', function(e) {
-  console.log(e);
-  let pageYOffset = 10;
-  if (pageYOffset > 50) {
+  if (getBodyScrollTop() > 50) {
     document.querySelector('.header').classList.add('active')
   } else {
     document.querySelector('.header').classList.remove('active')
