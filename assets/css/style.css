@@ -771,7 +771,7 @@ input::placeholder {
   border-radius: 3px;
   color: #000;
   font-weight: 600;
-
+  border: none;
   align-items: center;
   justify-content: center;
 }
