@@ -77,6 +77,11 @@
     </div>
 
     <div class="header__navigaton">
+      <button class="burger-btn">
+        <i class="fas fa-bars toggle__icon--close"></i>
+        <i class="fas fa-times toggle__icon--open" style="display: none;"></i>
+      </button>
+
       <div class="header__logo">
         <a href="#">
           <img src="assets/img/logo.png" alt="logo">
@@ -86,13 +91,13 @@
       <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#">HOME</a>
+            <a href="#">Home</a>
           </li>
           <li class="menu__item">
-            <a href="#">ABOUT US</a>
+            <a href="#">About Us</a>
           </li>
           <li class="menu__item menu__item_list dropdown">
-            <a href="#" class="dropbtn">SERVICES <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
+            <a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
             <ul class="submenu">
               <li class="submenu__item">
                 <a href="#">
@@ -130,19 +135,23 @@
             <a href="#">Testimonials</a>
           </li>
           <li class="menu__item">
-            <a href="#">GALLERY</a>
+            <a href="#">Gallery</a>
           </li>
           <li class="menu__item">
-            <a href="#">BLOG</a>
+            <a href="#">Blog</a>
           </li>
           <li class="menu__item">
             <a href="#">Contact us</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item" style="padding-bottom: 20px;">
             <a href="#">Locations</a>
           </li>
         </ul>
       </nav>
+
+      <a href="tel:tel:(888) 608-3330" class="call-btn">
+        <i class="fas fa-phone-alt"></i>
+      </a>
     </div>
   </header>
 
@@ -272,6 +281,29 @@
         document.querySelector('.header').classList.remove('active')
       }
     })
+
+    document.querySelector('.burger-btn').addEventListener('click', function(){
+      document.querySelector('.header__navigaton').classList.toggle('_active');
+      setTimeout(function(){
+        const close = document.querySelector('.toggle__icon--close');
+        const open = document.querySelector('.toggle__icon--open');
+        const active = document.querySelector('.header__navigaton._active');
+
+        if(active){
+          close.style.display = 'none';
+          open.style.display = 'block';
+        }
+        else {
+          close.style.display = 'block';
+          open.style.display = 'none';
+        }
+
+      }, 10);
+    });
+
+    document.querySelector('.dropdown').addEventListener('click', function(){
+      document.querySelector('.submenu').classList.toggle('_active');
+    });
   </script>
 </body>
 

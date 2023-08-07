@@ -1,4 +1,4 @@
-<?php wp_footer();?>
+
 <footer class="footer" id="contacts" data-watch="navigator">
   <div class="footer__body">
     <div class="logo">
@@ -63,6 +63,6 @@
     </div>
   </div>
 </footer>
-
+    <?php wp_footer();?>
 </body>
 </html>
