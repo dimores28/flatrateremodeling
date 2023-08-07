@@ -729,7 +729,6 @@ input::placeholder {
 
 .header.active {
   background: rgba(0, 0, 0, 0.59);
-  margin-top: -40px;
 }
 
 .header__left {
