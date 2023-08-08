@@ -3,25 +3,25 @@
   <div class="footer__body">
     <div class="logo">
       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
-      <span>license # 996391</span>
+      <span class="license">License # 996391</span>
     </div>
     <div class="last-post">
-      <h3 class="last-post__title footer-title">RECENT POSTS</h3>
+      <h3 class="last-post__heading footer-title">RECENT POSTS</h3>
       <div class="last-post__item">
         <div class="last-post__data">20 July</div>
-        <p class="post__title">
+        <p class="last-post__title">
           Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
         </p>
       </div>
       <div class="last-post__item">
         <div class="last-post__data">20 July</div>
-        <p class="post__title">
+        <p class="last-post__title">
           Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
         </p>
       </div>
       <div class="last-post__item">
         <div class="last-post__data">20 July</div>
-        <p class="post__title">
+        <p class="last-post__title">
           Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
         </p>
       </div>
@@ -54,15 +54,18 @@
   </div>
 
   <div class="copyright">
-    <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
-    <div class="sns">
-      <a class="sns__link" href=""><i class="fa-brands fa-facebook-f"></i></a>
-      <a class="sns__link" href=""><i class="fa-brands fa-yelp"></i></a>
-      <a class="sns__link" href=""><i class="fa-brands fa-google"></i></a>
-      <a class="sns__link" href=""><i class="fa-brands fa-instagram"></i></a>
+    <div class="copyright__container">
+      <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
+      <div class="sns">
+        <a class="sns__link" href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="sns__link" href=""><i class="fa-brands fa-yelp"></i></a>
+        <a class="sns__link" href=""><i class="fa-brands fa-google"></i></a>
+        <a class="sns__link" href=""><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
   </div>
 </footer>
+
 
 <button class="btn-up">
   <svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">

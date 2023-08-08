@@ -983,7 +983,7 @@ input::placeholder {
   align-items: center;
 }
 
-.last-post__title {
+.last-post__heading {
   color: #fff;
 }
 
@@ -996,7 +996,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
 }
-.post__title {
+.last-post__title {
   color: #fff;
   max-width: 180px;
   font-family: montserrat, Sans-serif;
