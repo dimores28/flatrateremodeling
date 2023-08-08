@@ -112,7 +112,7 @@
       </button>
 
       <div class="header__logo">
-        <a href="#">
+        <a href="/">
           <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo">
         </a>
       </div>
@@ -161,13 +161,13 @@
             </ul>
           </li>
           <li class="menu__item">
-            <a href="#">Testimonials</a>
+            <a href="https://flatrateremodeling.semempires.com/testimonials/">Testimonials</a>
           </li>
           <li class="menu__item">
             <a href="#">Gallery</a>
           </li>
           <li class="menu__item">
-            <a href="#">Blog</a>
+            <a href="https://flatrateremodeling.semempires.com/blog/">Blog</a>
           </li>
           <li class="menu__item">
             <a href="https://flatrateremodeling.semempires.com/contact-us/">Contact us</a>
