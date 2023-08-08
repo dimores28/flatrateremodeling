@@ -1590,6 +1590,11 @@ body.lock {
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   max-height: 2.4em;
+  text-decoration: none;
+}
+
+.post__title > a {
+  text-decoration: none;
 }
 
 @supports not (-webkit-line-clamp: 2) {
@@ -1599,11 +1604,6 @@ body.lock {
     position: relative;
     line-height: 1.2em;
     max-height: 2.4em;
-    text-decoration: none;
-  }
-
-  .post__title a {
-    text-decoration: none;
   }
 
   .post__title::before {
