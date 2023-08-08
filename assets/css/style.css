@@ -1181,8 +1181,8 @@ input::placeholder {
   align-items: center;
 }
 
-.get-started__container {
-  width: 100%;
+.get-started__body {
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
