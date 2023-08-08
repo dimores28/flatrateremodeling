@@ -118,6 +118,6 @@ document.querySelector('.dropdown').addEventListener('click', function(){
 });
 
 document.querySelector('.btn-up').addEventListener('click', function() {
-  const hiddenElement = document.getElementById("body");
+  const hiddenElement = document.querySelector("body");
   hiddenElement.scrollIntoView({ block: "start", behavior: "smooth" });
 });
