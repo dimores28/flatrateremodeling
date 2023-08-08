@@ -86,6 +86,15 @@ window.addEventListener("scroll", function (e) {
   } else {
     document.querySelector(".header").classList.remove("active");
   }
+
+  const windowInnerWidth = document.documentElement.clientWidth;
+
+  if(getBodyScrollTop() > 200 && windowInnerWidth > 544) {
+    document.querySelector('.btn-up').style.display = 'flex';
+  } else {
+    document.querySelector('.btn-up').style.display = 'none';
+  }
+
 });
 
 document.querySelector(".burger-btn").addEventListener("click", function () {
@@ -126,4 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.style.display = "none";
     }
   };
+});
+
+document.querySelector('.btn-up').addEventListener('click', function() {
+  const hiddenElement = document.getElementById("body");
+  hiddenElement.scrollIntoView({ block: "start", behavior: "smooth" });
 });

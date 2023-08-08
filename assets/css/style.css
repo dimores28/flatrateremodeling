@@ -564,6 +564,26 @@ input::placeholder {
   max-width: 350px;
 }
 
+@media (max-width: 1080px) {
+  .hero {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 874px) {
+  .hero__left {
+    display: none;
+  }
+}
+
+@media (max-width: 544px) {
+  /* Стрелки */
+  .main-slider .swiper-button-prev,
+  .main-slider .swiper-button-next {
+    display: none;
+  }
+}
+
 .consultation__heding {
   color: #606060;
   font-family: Montserrat, Sans-serif;
@@ -1263,3 +1283,20 @@ button {
   color: inherit;
   background-color: transparent;
 }
+/*-----------------------------------------------------------------------------------------------------*/
+.btn-up {
+  width: 32px;
+  height: 32px;
+  background: #046bd2;
+  border: none;
+  border-radius: 3px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  z-index: 99;
+  right: 30px;
+  bottom: 30px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
