@@ -21,10 +21,12 @@ Template Name: Remodeling
    <div class="get-started__body">
       <p class="get-started__text">Lets Get Started on Your Next Project!</p>
       <a id="btn_open" 
-      class="get-started__button popup-link"
-      href="#popup_1"
+         class="get-started__button popup-link" 
+         style="text-decoration: none;"
+         href="#popup_1"
       >
-         Start here</a>
+         Start here
+      </a>
    </div>
    </section>
 <?php get_footer();?>
