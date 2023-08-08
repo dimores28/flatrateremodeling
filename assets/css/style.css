@@ -1028,9 +1028,17 @@ input::placeholder {
 
 .copyright {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 40px 40px 40px;
+  justify-content: center;
   background-color: #191919;
+  background-color: #191919;
+}
+
+.copyright__body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+  padding: 40px 0;
 }
 
 @media (max-width: 650px) {

@@ -54,7 +54,7 @@
   </div>
 
   <div class="copyright">
-    <div class="copyright__container">
+    <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
         <a class="sns__link" href=""><i class="fa-brands fa-facebook-f"></i></a>
