@@ -1413,6 +1413,7 @@ input::placeholder {
   overflow-x: hidden;
   transition: all 0.8s ease 0s;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 200;
 }
 .popup.open {
   opacity: 1;
@@ -1440,10 +1441,10 @@ input::placeholder {
   transition: all 0.8s ease 0s;
 }
 .popup__content {
-  background-color: #fff;
+  background-color: #000000cc;
   color: #000;
-  max-width: 800px;
-  padding: 30px;
+  max-width: 650px;
+  width: 100%;
   position: relative;
   transition: all 0.8s ease 0s;
   opacity: 0;
@@ -1462,14 +1463,14 @@ input::placeholder {
   right: 10px;
   top: 10px;
   font-size: 20px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
-.popup__title {
-  font-size: 40px;
-  margin: 0px 0px 1em 0px;
-}
-.popup__text {
+.popup__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body.lock {
