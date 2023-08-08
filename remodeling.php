@@ -8,9 +8,11 @@ Template Name: Remodeling
    <?php  the_content(); ?>
    
    <main class="main-services">
+   <?php echo do_shortcode('[logoshowcase]'); ?>
 
     <h2 class="service-heding">Our Customers<span>Love Our Work!</span></h2>
-    
+    <h3 class="reviews-title">Customers Testimonials</h3>
+
     <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
    </main>
    
