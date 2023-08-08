@@ -14,7 +14,45 @@ Template Name: Contact
 </div>
 
 <main class="main">
+<section class="contact-secton">
+    <div class="contact-secton__container">
+        <div class="contact-secton__form">
+        <h2 class="contact-secton__title">Get a FREE Estimate</h2>
+        <p class="contact-secton__sub-title">
+            Schedule an in-home appointment
+        </p>
+        <form class="feedback__form">
+            <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+            <input class="form-control" name="yourPhone" type="text" placeholder="Name" aria-label="your phone" />
+            <input class="form-control" name="yourEmail" type="email" placeholder="Name" aria-label="your email" />
+            <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+            <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
+        </form>
+        </div>
+        <div class="contact-secton__info">
+        <h2 class="contact-secton__row contact-secton__row_head">
+            Contact Information
+        </h2>
+        <div class="contact-secton__row">
+            <a href="tel:8886083330">
+            Toll Free: (888) 608-3330
+            </a>
+        </div>
+        <div class="contact-secton__row">
+            <a href="tel:3237617540">
+            Toll Free:(323) 761-7540
+            </a>
+        </div>
+        <div class="contact-secton__row">
+            <a href="mailto:tal@flatrateremodeling.com" >
+            tal@flatrateremodeling.com
+            </a>
+        </div>
+        </div>
+    </div>
 
+   </div>
+</section>
 </main>
 
 <?php get_footer();?>
