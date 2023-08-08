@@ -70,6 +70,25 @@
   </svg>
 </button>
 
+
+<div id="popup_1" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#header" class="popup__close close-popup">X</a>
+      <div class="popup__title">Это модальное окно №2</div>
+      <div class="popup__text">
+        ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+      </div>
+    </div>
+  </div>
+</div>
+
     <?php wp_footer();?>
 </body>
 </html>
