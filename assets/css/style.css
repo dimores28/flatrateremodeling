@@ -431,19 +431,18 @@ input::placeholder {
   }
 }
 
-
 .gallery-slider {
   width: 100%;
   height: 448px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .gallery-slider {
     height: 340px;
   }
 }
 
-@media (max-width: 496px){
+@media (max-width: 496px) {
   .gallery__sliders {
     padding: 15px;
     gap: 20px;
@@ -565,19 +564,19 @@ input::placeholder {
   max-width: 350px;
 }
 
-@media (max-width: 1080px){
-    .hero {
-      gap: 40px;
-    }
+@media (max-width: 1080px) {
+  .hero {
+    gap: 40px;
+  }
 }
 
-@media (max-width: 874px){
+@media (max-width: 874px) {
   .hero__left {
     display: none;
- }
+  }
 }
 
-@media (max-width: 544px){
+@media (max-width: 544px) {
   /* Стрелки */
   .main-slider .swiper-button-prev,
   .main-slider .swiper-button-next {
@@ -933,10 +932,6 @@ input::placeholder {
   }
 }
 
-.copyright {
-  background-color: #191919;
-}
-
 .contact {
   grid-area: contact;
   display: flex;
@@ -1032,6 +1027,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   padding: 30px 40px 40px 40px;
+  background-color: #191919;
 }
 
 @media (max-width: 650px) {
@@ -1104,16 +1100,15 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
-.services__img  {
-
+.services__img {
 }
 
-.services__img  img{
+.services__img img {
   width: 100%;
   height: auto;
 }
 
-.services__title a{
+.services__title a {
   color: #606060;
   font-family: Montserrat, Sans-serif;
   font-size: 17px;
@@ -1124,7 +1119,7 @@ input::placeholder {
 
 .services__details {
   color: #606060;
-  font-family: montserrat,Sans-serif;
+  font-family: montserrat, Sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
@@ -1134,23 +1129,23 @@ input::placeholder {
 
 .services__details::before {
   position: relative;
-  content: '';
+  content: "";
   left: 0;
   bottom: -21px;
-  background: #BB945B;
+  background: #bb945b;
   display: block;
   height: 1px;
   width: 38px;
   z-index: 5;
 }
 
-@media (max-width: 920px){
+@media (max-width: 920px) {
   .services__item {
     flex: 1 1 calc(100% / 2 - 14px);
   }
 }
 
-@media (max-width: 574px){
+@media (max-width: 574px) {
   .services__item {
     flex: 1 1 100%;
   }
@@ -1172,6 +1167,121 @@ input::placeholder {
 
 .ti-footer {
   opacity: 0 !important;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.get-started {
+  background-color: #bb945b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.get-started__body {
+  max-width: 1200px;
+  min-width: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 30px;
+  gap: 30px;
+}
+
+@media (max-width: 650px) {
+  .get-started__body {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.get-started__text {
+  max-width: 500px;
+  color: #fff;
+  font-family: montserrat, Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.get-started__button {
+  color: #fff;
+  font-family: montserrat, Sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup__logo {
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+.popup__content {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  z-index: 1;
+  width: 640px;
+  max-height: 500px;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+}
+@media (max-width: 650px) {
+  .popup__content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@keyframes animatetop {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 .btn-up {

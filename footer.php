@@ -38,7 +38,7 @@
         <span>tal@flatrateremodeling.com</span>
       </a>
 
-      <a href="#">Privacy Policy</a>
+      <a class="contacts__link" href="#">Privacy Policy</a>
     </div>
     <div class="instagram-post">
       <h3 class="instagram-post__title footer-title">PHOTO STREAM</h3>
