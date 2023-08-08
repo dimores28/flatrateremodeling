@@ -170,7 +170,7 @@
             <a href="#">Blog</a>
           </li>
           <li class="menu__item">
-            <a href="#">Contact us</a>
+            <a href="https://flatrateremodeling.semempires.com/contact-us/">Contact us</a>
           </li>
           <li class="menu__item" style="padding-bottom: 20px;">
             <a href="#">Locations</a>
