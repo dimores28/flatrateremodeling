@@ -120,16 +120,16 @@
       <nav class="header__nav">
         <ul class="menu">
           <li class="menu__item">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li class="menu__item">
-            <a href="#">About Us</a>
+            <a href="https://flatrateremodeling.semempires.com/about/">About Us</a>
           </li>
           <li class="menu__item menu__item_list dropdown">
             <a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
             <ul class="submenu">
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/remodeling/">
                   Kitchen Design & Remodeling
                 </a>
               </li>

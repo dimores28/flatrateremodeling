@@ -23,11 +23,7 @@ h1 {
   margin: 0.67em 0;
 }
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
+
 
 pre {
   font-family: monospace, monospace; /* 1 */
@@ -1396,7 +1392,6 @@ input::placeholder {
   padding: 0;
 }
 /*-----------------------------------------------------------------------------------------------------*/
-<<<<<<< HEAD
 .popup {
 	position: fixed;
 	width: 100%;
@@ -1472,7 +1467,6 @@ input::placeholder {
 body.lock {
 	overflow: hidden;
 }
-=======
 
 .get-started {
   background-color: #bb945b;
@@ -1536,7 +1530,6 @@ body.lock {
 .blog__posts {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (370px) [2];
   grid-template-columns: repeat(2, 370px);
   gap: 24px;
 }
@@ -1963,5 +1956,4 @@ body.lock {
   }
 }
 
->>>>>>> 40bedaded17d5730884049035039ab7970604e14
 /*-----------------------------------------------------------------------------------------------------*/
