@@ -10,8 +10,7 @@ Template Name: About
           <div class="about__header">
             <img
               class="about__bg"
-              src="@img/bg-subheader-about.jpg"
-              alt="about__bg"
+              src="<?php bloginfo('template_url'); ?>/assets/img/bg-subheader-about.jpg" width="1348" height="520" alt="bg-subheader-about"
             />
             <div class="about__heading">
               <h2>ABOUT US</h2>
