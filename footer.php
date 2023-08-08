@@ -77,16 +77,41 @@
 <div id="popup_1" class="popup">
   <div class="popup__body">
     <div class="popup__content">
-      <a href="#header" class="popup__close close-popup">X</a>
-      <div class="popup__title">Это модальное окно №2</div>
-      <div class="popup__text">
-        ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+      <a href="#header" class="popup__close close-popup"><i class="fa-solid fa-xmark"></i></a>
+      <div class="popup__logo">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
+      </div>
+      <div class="feedback feedback-black">
+        <form class="feedback__form">
+          <input
+            class="form-control"
+            name="yourName"
+            type="text"
+            placeholder="Name"
+            aria-label="your name"
+          />
+          <input
+            class="form-control"
+            name="yourEmail"
+            type="email"
+            placeholder="Name"
+            aria-label="your email"
+          />
+          <input
+            class="form-control"
+            name="yourPhone"
+            type="text"
+            placeholder="Name"
+            aria-label="your phone"
+          />
+          <textarea
+            class="form-control"
+            name="yourMessage"
+            placeholder="Message"
+            aria-label="your message"
+          ></textarea>
+          <input type="submit" class="btn form-btn" value="Send" />
+        </form>
       </div>
     </div>
   </div>
