@@ -1444,10 +1444,10 @@ input::placeholder {
   transition: all 0.8s ease 0s;
 }
 .popup__content {
-  background-color: #fff;
+  background-color: #000000cc;
   color: #000;
   max-width: 650px;
-  padding: 30px;
+  width: 100%;
   position: relative;
   transition: all 0.8s ease 0s;
   opacity: 0;
@@ -1466,7 +1466,7 @@ input::placeholder {
   right: 10px;
   top: 10px;
   font-size: 20px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 .popup__logo {
