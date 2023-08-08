@@ -1602,6 +1602,10 @@ body.lock {
     text-decoration: none;
   }
 
+  .post__title a {
+    text-decoration: none;
+  }
+
   .post__title::before {
     content: "...";
     position: absolute;
@@ -1782,6 +1786,7 @@ body.lock {
   max-width: 1140px;
   min-width: 0px;
   margin: 100px 0;
+  width: 95%;
 }
 
 .about__img {
