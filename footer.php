@@ -69,6 +69,44 @@
     <path fill="#fff" d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
   </svg>
 </button>
+ <div class="popup" id="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__content">
+      <div class="popup__logo"></div>
+      <div class="feedback feedback-black">
+        <form class="feedback__form">
+          <input
+            class="form-control"
+            name="yourName"
+            type="text"
+            placeholder="Name"
+            aria-label="your name"
+          />
+          <input
+            class="form-control"
+            name="yourEmail"
+            type="email"
+            placeholder="Name"
+            aria-label="your email"
+          />
+          <input
+            class="form-control"
+            name="yourPhone"
+            type="text"
+            placeholder="Name"
+            aria-label="your phone"
+          />
+          <textarea
+            class="form-control"
+            name="yourMessage"
+            placeholder="Message"
+            aria-label="your message"
+          ></textarea>
+          <input type="submit" class="btn form-btn" value="Send" />
+        </form>
+      </div>
+    </div>
+  </div>
 
     <?php wp_footer();?>
 </body>
