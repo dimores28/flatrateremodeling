@@ -5,12 +5,21 @@ Template Name: Testimonials
 ?>
 
 <?php get_header();?>
+
+<section class="testimonials">
+    <div class="testimonials__container">
+        <h1 class="testimonials__header">
+            TESTIMONIALS
+        </h1>
+    </div>
+</section>
+
 <div class="side-column-section">
     <div class="side-column-section__content">
-
+        <?php echo do_shortcode('[trustindex data-widget-id=2f56fbf184455915299619bfd6d]'); ?>
     </div>
     <aside class="side-column-section__aside">
-    <div class="aside-form">
+    <div class="aside-form" style="margin-top: 12px;">
         <h2 class="aside-form__title">
         Schedule A Free Consultation
         </h2>
