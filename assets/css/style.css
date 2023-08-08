@@ -1173,3 +1173,20 @@ input::placeholder {
 .ti-footer {
   opacity: 0 !important;
 }
+/*-----------------------------------------------------------------------------------------------------*/
+.btn-up {
+  width: 32px;
+  height: 32px;
+  background: #046bd2;
+  border: none;
+  border-radius: 3px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  cursor: pointer;
+  z-index: 99;
+  right: 30px;
+  bottom: 30px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
