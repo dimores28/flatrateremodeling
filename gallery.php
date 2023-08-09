@@ -18,7 +18,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-1.jpg"
+                        src="<?php bloginfo('template_url'); ?>/assets/img/gallery-1.jpg" 
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
@@ -34,7 +34,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-2.jpg"
+                        src="<?php bloginfo('template_url'); ?>/assets/img/gallery-2.jpg"
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
@@ -50,7 +50,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-3.jpg"
+                         src="<?php bloginfo('template_url'); ?>/assets/img/gallery-3.jpg"
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
@@ -66,7 +66,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-4.jpg"
+                        src="<?php bloginfo('template_url'); ?>/assets/img/gallery-4.jpg"
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
@@ -82,7 +82,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-5.jpg"
+                        src="<?php bloginfo('template_url'); ?>/assets/img/gallery-5.jpg"
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
@@ -98,7 +98,7 @@ Template Name: Gallery
                   <div class="gallery-post__img">
                     <a href="#">
                       <img
-                        src="@img/gallery-6.jpg"
+                        src="<?php bloginfo('template_url'); ?>/assets/img/gallery-6.jpg"
                         alt="gallery-post thumbnail"
                         width="340"
                         height="340"
