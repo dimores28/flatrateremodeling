@@ -40,27 +40,27 @@ Template Name: Home
                 </div>
               </div>
             </div>
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/slide.jpg" width="1348" height="520" alt="slide" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/iStock-1148629418.jpg" width="1348" height="520" alt="slide" />
             
           </div>
         </div>
         <div class="swiper-slide">
           <div class="main-slider__img">
 
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/slide1.jpg" width="1348" height="520" alt="slide" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/iStock-1363560181.jpg" width="1348" height="520" alt="slide" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="main-slider__img">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/slide3.jpg" width="1348" height="520" alt="slide" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/iStock-1398692686.jpg" width="1348" height="520" alt="slide" />
           </div>
         </div>
         <div class="swiper-slide">
           <div class="main-slider__img">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/slide4.jpg" width="1348" height="520" alt="slide" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/iStock-1453183714.jpg" width="1348" height="520" alt="slide" />
           </div>
         </div>
-        <div class="swiper-slide">
+       <!--  <div class="swiper-slide">
           <div class="main-slider__img">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/slide5.jpg" width="1348" height="520" alt="slide" />
           </div>
@@ -94,7 +94,7 @@ Template Name: Home
           <div class="main-slider__img">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/slide11.jpg" width="1348" height="520" alt="slide" />
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>

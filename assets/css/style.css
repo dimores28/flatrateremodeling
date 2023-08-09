@@ -1112,7 +1112,7 @@ input::placeholder {
 
 .services__img img {
   width: 100%;
-  height: auto;
+  height: 294px;
 }
 
 .services__title a {
@@ -1126,7 +1126,7 @@ input::placeholder {
 
 .services__details {
   color: #606060;
-  font-family: montserrat, Sans-serif;
+  font-family: Montserrat, Sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
@@ -1155,6 +1155,10 @@ input::placeholder {
 @media (max-width: 574px) {
   .services__item {
     flex: 1 1 100%;
+  }
+
+  .services__img img {
+    height: auto;
   }
 }
 /*-----------------------------------------------------------------------------------------------------*/
