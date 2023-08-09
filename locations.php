@@ -1,10 +1,11 @@
 <?php
 /*
-Template Name: Gallery
+Template Name: Locations
 */
 ?>
 
 <?php get_header();?>
+
 
 <section class="get-started" style="margin-top: 30px;">
    <div class="get-started__body">
