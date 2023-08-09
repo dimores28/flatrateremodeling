@@ -1115,7 +1115,7 @@ input::placeholder {
 
 .services__img img {
   width: 100%;
-  height: auto;
+  height: 294px;
 }
 
 .services__title a {
@@ -1129,7 +1129,7 @@ input::placeholder {
 
 .services__details {
   color: #606060;
-  font-family: montserrat, Sans-serif;
+  font-family: Montserrat, Sans-serif;
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
@@ -1158,6 +1158,10 @@ input::placeholder {
 @media (max-width: 574px) {
   .services__item {
     flex: 1 1 100%;
+  }
+
+  .services__img img {
+    height: auto;
   }
 }
 /*-----------------------------------------------------------------------------------------------------*/
@@ -1996,7 +2000,7 @@ body.lock {
 .main-services {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 60px 15px 30px 15px;
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -2063,6 +2067,24 @@ body.lock {
   .testimonials__header {
     font-size: 32px;
   }
+}
+/*-----------------------------------------------------------------------------------------------------*/
+.locations {
+  height: 80vh;
+}
+
+.locations iframe {
+  width: 100%;
+  height: 100%;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+.locations {
+  height: 80vh;
+}
+
+.locations iframe {
+  width: 100%;
+  height: 100%;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 .gallery {
