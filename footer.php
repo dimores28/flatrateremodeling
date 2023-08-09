@@ -43,12 +43,12 @@
     <div class="instagram-post">
       <h3 class="instagram-post__title footer-title">PHOTO STREAM</h3>
       <div class="instagram-post__body">
-        <div class="instagram-post__item"></div>
-        <div class="instagram-post__item"></div>
-        <div class="instagram-post__item"></div>
-        <div class="instagram-post__item"></div>
-        <div class="instagram-post__item"></div>
-        <div class="instagram-post__item"></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f1.jpg" alt="instagram" width="75" height="75"/></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f2.jpg" alt="instagram"width="75" height="75"/></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f3.jpg" alt="instagram" width="75" height="75"/></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f4.jpg" alt="instagram" width="75" height="75"/></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f5.jpg" alt="instagram" width="75" height="75"/></div>
+        <div class="instagram-post__item"><img src="<?php bloginfo('template_url'); ?>/assets/img/f6.jpg" alt="instagram" width="75" height="75"/></div>
       </div>
     </div>
   </div>

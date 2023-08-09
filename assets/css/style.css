@@ -1016,8 +1016,13 @@ input::placeholder {
 .instagram-post__item {
   width: 75px;
   height: 75px;
-  background-color: #fff;
 }
+
+.instagram-post__item > img {
+  width: 75px;
+  height: 75px;
+}
+
 .instagram-post__title {
   color: #fff;
 }
