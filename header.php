@@ -134,27 +134,27 @@
                 </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/energy-efficient-products/">
                   Energy Efficient Products
                 </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/sun-rooms-patio-enclosures/">
                   Sun Rooms & Patio Enclosures
                 </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/bathroom-design-remodeling/">
                   Bathroom Design & Remodeling
                 </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/general-home-renovations/">
                   General Home Renovations
                 </a>
               </li>
               <li class="submenu__item">
-                <a href="#">
+                <a href="https://flatrateremodeling.semempires.com/additions-new-construction/">
                   Additions & New Construction
                 </a>
               </li>
@@ -164,7 +164,7 @@
             <a href="https://flatrateremodeling.semempires.com/testimonials/">Testimonials</a>
           </li>
           <li class="menu__item">
-            <a href="#">Gallery</a>
+            <a href="https://flatrateremodeling.semempires.com/gallery/">Gallery</a>
           </li>
           <li class="menu__item">
             <a href="https://flatrateremodeling.semempires.com/blog/">Blog</a>
@@ -173,7 +173,7 @@
             <a href="https://flatrateremodeling.semempires.com/contact-us/">Contact us</a>
           </li>
           <li class="menu__item" style="padding-bottom: 20px;">
-            <a href="#">Locations</a>
+            <a href="https://flatrateremodeling.semempires.com/locations/">Locations</a>
           </li>
         </ul>
       </nav>
