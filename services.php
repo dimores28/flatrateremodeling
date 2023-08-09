@@ -5,11 +5,11 @@ Template Name: Services
 ?>
 
 <?php get_header();?>
-
+   
    <main class="main-services">
       <?php  the_content(); ?>
 
-    <h2 class="service-heding">Our Customers<span>Love Our Work!</span></h2>
+    <h2 class="service-heding" style="margin-top: 30px;">Our Customers<span>Love Our Work!</span></h2>
     <h3 class="reviews-title" style="font-size: 17px;">Customers Testimonials</h3>
 
     <?php echo do_shortcode('[trustindex no-registration=google]'); ?>

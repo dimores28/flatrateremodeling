@@ -2078,6 +2078,71 @@ body.lock {
   height: 100%;
 }
 /*-----------------------------------------------------------------------------------------------------*/
+
+.main-services {
+
+}
+
+.main-services h1 {
+  font-family: Montserrat, Sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.25em;
+  color: #bb945b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-services section {
+  margin: 50px 0px;
+}
+
+.main-services p {
+  font-family: Montserrat, Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.main-services figure {
+  margin: 30px 0px;
+}
+
+.main-services figure img {
+  width: 100%;
+  height: auto;
+}
+
+.main-services ol,
+.main-services ul {
+  font-family: Montserrat, Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.main-services h2 {
+  font-family: Montserrat, Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+.main-services h3 {
+  font-family: Montserrat, Sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
 .locations {
   height: 80vh;
 }

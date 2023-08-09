@@ -5,9 +5,10 @@ Template Name: Sun Rooms
 ?>
 
 <?php get_header();?>
-   <?php  the_content(); ?>
-   
+
    <main class="main-services">
+      <?php  the_content(); ?>
+
     <h2 class="service-heding">Our Customers<span>Love Our Work!</span></h2>
     <h3 class="reviews-title" style="font-size: 17px;">Customers Testimonials</h3>
 
