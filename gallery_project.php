@@ -47,7 +47,7 @@ Template Name: Gallery project
               </div>
             </div>
             <div class="logo post-gallery__logo">
-              <img src="img/logo.png" alt="logo" class="logo__img" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
             </div>
           </section>
         
