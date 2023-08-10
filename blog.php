@@ -12,7 +12,7 @@ Template Name: Blog
                 <div class="post__img">
                   <a href="#">
                     <img
-                      src="<?php bloginfo('template_url'); ?>/assets/img/blog-1.png" width="1348" height="520" alt="slide" />"
+                      src="<?php bloginfo('template_url'); ?>/assets/img/post-img.webp" 
                       alt="post thumbnail"
                       width="380"
                       height="260"
@@ -44,7 +44,7 @@ Template Name: Blog
                 <div class="post__img">
                   <a href="#">
                     <img
-                      src="<?php bloginfo('template_url'); ?>/assets/img/blog-2.png" 
+                      src="<?php bloginfo('template_url'); ?>/assets/img/post-1-img.webp"
                       alt="post thumbnail"
                       width="380"
                       height="260"
