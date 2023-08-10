@@ -1854,6 +1854,11 @@ body.lock {
   margin: 0 auto;
 }
 
+.article__content figure iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .article__data {
   font-family: montserrat, Sans-serif;
   font-size: 14px;
@@ -2556,6 +2561,12 @@ body.lock {
 .post-gallery__logo {
   margin: 40px 0;
   background-color: #222222;
+}
+
+@media (max-width: 900px) {
+  .post-gallery {
+    margin: 0 auto;
+  }
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
