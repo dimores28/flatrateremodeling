@@ -54,6 +54,33 @@ add_theme_support('custom-logo');
 //  }
 
 
+add_action( 'init', function () {
+
+	register_post_type( 'Gallery page', [
+		'label'  => 'Gallery page',
+		'labels' => [
+			'name'               => 'Gallery page', // основное название для типа записи
+			'singular_name'      => 'Gallery page', // название для одной записи этого типа
+			'add_new'            => 'Adding an add-on', // для добавления новой записи
+			'add_new_item'       => 'Adding Gallery page', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on Gallery', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found Extra', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in cart', // если не было найдено в корзине
+			'menu_name'          => 'Gallery page', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-filter',
+		'supports'            => [ 'title', 'thumbnail', 'editor'],  // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+
+	] );
+
+});
+
+
 
 //======================SVG===========================================//
 add_filter( 'upload_mimes', 'svg_upload_allow' );
