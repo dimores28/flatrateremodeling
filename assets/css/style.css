@@ -2545,7 +2545,7 @@ body.lock {
 .post-gallery__budget-text,
 .post-gallery__turnaround-text {
   font-family: Montserrat, Sans-serif;
-  max-width: 150px;
+  max-width: 200px;
   font-size: 17px;
   font-weight: 500;
   color: #000;
