@@ -5,9 +5,12 @@ Template Name: Gallery project
 ?>
 <?php get_header();?>
 
+<?php echo $_GET['post_id'];  ?>
+
 <div class="side-column-section article__container">
      
     <div class="side-column-section__content">
+      
        <section class="post-gallery">
             <div class="post-gallery__header">
               <div class="post-gallery__title">
@@ -45,7 +48,7 @@ Template Name: Gallery project
               </div>
             </div>
             <div class="logo post-gallery__logo">
-              <img src="img/logo.png" alt="logo" class="logo__img" />
+              <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
             </div>
           </section>
         
@@ -73,8 +76,8 @@ Template Name: Gallery project
     <!-- Map -->
     </div>
     </aside>
-
-    <section class="contact-secton">
+</div>
+<section class="contact-secton">
     <div class="contact-secton__container">
         <div class="contact-secton__form">
         <h2 class="contact-secton__title">Get a FREE Estimate</h2>
@@ -113,5 +116,4 @@ Template Name: Gallery project
 
    </div>
 </section>
-</div>
 <?php get_footer();?>
