@@ -2453,3 +2453,107 @@ body.lock {
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
+.post-gallery {
+  max-width: 540px;
+}
+
+.post-gallery__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.post-gallery__title {
+  border-right: 2px solid #000;
+  padding: 20px;
+}
+
+.post-gallery__title h3 {
+  color: #212529;
+  font-family: Montserrat, Sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.post-gallery__title-location {
+  padding: 20px;
+}
+
+.post-gallery__title-location h3 {
+  color: #212529;
+  font-family: Montserrat, Sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.post-gallery__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f5f5f5;
+  padding: 25px 15px;
+  border: 1px solid #d9d9d9;
+}
+
+.post-gallery__location,
+.post-gallery__date,
+.post-gallery__budget,
+.post-gallery__turnaround {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.post-gallery__location-title,
+.post-gallery__date-title,
+.post-gallery__budget-title,
+.post-gallery__turnaround-title {
+  font-family: Montserrat, Sans-serif;
+  width: 150px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+}
+
+.post-gallery__location-title i,
+.post-gallery__date-title i,
+.post-gallery__budget-title i,
+.post-gallery__turnaround-title i {
+  color: #bb945b;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+}
+
+.post-gallery__location-text,
+.post-gallery__date-text,
+.post-gallery__budget-text,
+.post-gallery__turnaround-text {
+  font-family: Montserrat, Sans-serif;
+  max-width: 150px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+}
+
+.post-gallery__logo {
+  margin: 40px 0;
+  background-color: #222222;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
