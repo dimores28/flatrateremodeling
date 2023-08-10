@@ -74,11 +74,35 @@ add_action( 'init', function () {
 		'public'              => false,
 		'show_ui'             => true, // зависит от public
 		'menu_icon'           => 'dashicons-filter',
+		'show_in_rest'       => true,
 		'supports'            => [ 'title', 'thumbnail', 'editor'],  // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 
 	] );
 
 });
+
+	function getGallery() {
+		$args = array(
+			'post_type' => 'Gallery page',
+			'orderby'   => 'date',
+			'order'     => 'ASC',
+			'numberposts' => -1,
+		);
+
+		$galleryPages = [];
+
+		foreach(get_posts($args) as $post) {
+			$extra = get_fields($post->ID);
+			$extra['editor'] = get_the_content();
+			$extra['title'] = $post->post_title;
+			$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+			$extra['ID'] = $post->ID;
+
+			$galleryPages[] = $extra;
+		}
+
+		return $galleryPages;
+	}
 
 
 
