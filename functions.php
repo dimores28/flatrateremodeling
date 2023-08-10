@@ -93,7 +93,31 @@ add_action( 'init', function () {
 
 		foreach(get_posts($args) as $post) {
 			$extra = get_fields($post->ID);
-			$extra['editor'] = get_the_content();
+			$extra['editor'] = apply_filters( 'the_content', $post->post_content );
+			$extra['title'] = $post->post_title;
+			$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+			$extra['ID'] = $post->ID;
+
+			$galleryPages[] = $extra;
+		}
+
+		return $galleryPages;
+	}
+
+	function getGalleryProjectByID($id) {
+		$postId = [];
+		$postId[0] = $id;
+
+		$args = array(
+			'post_type' => 'Gallery page',
+			'include'     => $postId,
+		);
+
+		$galleryPages = [];
+
+		foreach(get_posts($args) as $post) {
+			$extra = get_fields($post->ID);
+			$extra['editor'] = apply_filters( 'the_content', $post->post_content );
 			$extra['title'] = $post->post_title;
 			$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
 			$extra['ID'] = $post->ID;

@@ -5,8 +5,6 @@ Template Name: Gallery project
 ?>
 <?php get_header();?>
 
-<?php echo $_GET['post_id'];  ?>
-
 <div class="side-column-section article__container">
      
     <div class="side-column-section__content">
