@@ -5,18 +5,32 @@ Template Name: Gallery project
 ?>
 <?php get_header();?>
 
-<!-- <?php echo $_GET['post_id'];  ?> -->
+<?php $id =  $_GET['post_id'];  ?>
 
-<div class="side-column-section a">
+<?php 
+if(!empty($id)) {
+  $body = getGalleryProjectByID($id);
+}
+?>
+
+<!-- <pre> <?php var_dump($body); ?> </pre> -->
+
+<?php if(!empty($body)) { ?>
+   <?php echo $body[0]["editor"]; ?>
+<?php } ?> 
+
+<div class="side-column-section article__container" style="padding-top: 0;">
+     
     <div class="side-column-section__content">
-      
+      <?php if(!empty($body)) { ?>
+     
        <section class="post-gallery">
             <div class="post-gallery__header">
               <div class="post-gallery__title">
-                <h3>Master Bath Renovation</h3>
+                <h3><?php echo $body[0]["title"]; ?></h3>
               </div>
               <div class="post-gallery__title-location">
-                <h3>Brentwood, CA</h3>
+                <h3><?php echo $body[0]["location"]; ?></h3>
               </div>
             </div>
             <div class="post-gallery__content">
@@ -24,33 +38,37 @@ Template Name: Gallery project
                 <h4 class="post-gallery__location-title">
                   <i class="fa-regular fa-square"></i>Location
                 </h4>
-                <p class="post-gallery__location-text">Brentwood, CA</p>
+                <p class="post-gallery__location-text"><?php echo $body[0]["location"]; ?></p>
               </div>
               <div class="post-gallery__date">
                 <h4 class="post-gallery__date-title">
                   <i class="fa-regular fa-square"></i>Year Winter
                 </h4>
-                <p class="post-gallery__date-text">2023</p>
+                <p class="post-gallery__date-text"><?php echo $body[0]["year_winter"]; ?></p>
               </div>
 
               <div class="post-gallery__budget">
                 <h4 class="post-gallery__budget-title">
                   <i class="fa-regular fa-square"></i>Budget
                 </h4>
-                <p class="post-gallery__budget-text">$38,000 - $42,000</p>
+                <p class="post-gallery__budget-text"><?php echo $body[0]["budget"]; ?></p>
               </div>
               <div class="post-gallery__turnaround">
                 <h4 class="post-gallery__turnaround-title">
                   <i class="fa-regular fa-square"></i>Turnaround
                 </h4>
-                <p class="post-gallery__turnaround-text">4 Months</p>
+                <p class="post-gallery__turnaround-text"><?php echo $body[0]["turnaround"]; ?></p>
               </div>
             </div>
             <div class="logo post-gallery__logo">
               <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
             </div>
           </section>
-        
+     <?php } ?>   
+
+     <div class="reviews-gallery">
+      <?php echo do_shortcode('[trustindex data-widget-id=f6802bd185c2719c5e7696a1893]'); ?>
+     </div>
     </div>
     <aside class="side-column-section__aside ">
     <div class="aside-form">
@@ -71,8 +89,10 @@ Template Name: Gallery project
         </form>
         </div>
     </div>
-    <div class class="aside-map">
-    <!-- Map -->
+    <div class="aside-map">
+      <?php if(!empty($body)) { ?>
+         <?php echo $body[0]["map_location"]; ?>
+      <?php } ?> 
     </div>
     </aside>
 </div>
