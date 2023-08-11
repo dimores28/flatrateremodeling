@@ -32,26 +32,26 @@ add_theme_support('custom-logo');
  * @param PHPMailer $phpmailer объект мэилера
  */
 
-//  function mihdan_send_smtp_email( PHPMailer $phpmailer ) {
-// 	$phpmailer->isSMTP();
-// 	$phpmailer->Host       = 'mail.adm.tools';
-// 	$phpmailer->SMTPAuth   = true;
-// 	$phpmailer->Port       = 465;
-// 	$phpmailer->Username   = 'info@tivacleaners.com';
-// 	$phpmailer->Password   = 'Tivacleaners2023!';
-// 	$phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-// 	$phpmailer->From       = 'info@tivacleaners.com';
-// 	$phpmailer->FromName   = 'Tivacleaners site';
+ function mihdan_send_smtp_email( PHPMailer $phpmailer ) {
+	$phpmailer->isSMTP();
+	$phpmailer->Host       = 'mail.adm.tools';
+	$phpmailer->SMTPAuth   = true;
+	$phpmailer->Port       = 465;
+	// $phpmailer->Username   = 'tal@flatrateremodeling.com';
+	// $phpmailer->Password   = 'Tivacleaners2023!';
+	$phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+	$phpmailer->From       = 'tal@flatrateremodeling.com';
+	$phpmailer->FromName   = 'Flatrateremodeling site';
 
-// }
+}
 
-// add_action( 'phpmailer_init', 'mihdan_send_smtp_email' );
+add_action( 'phpmailer_init', 'mihdan_send_smtp_email' );
 
-// add_filter( 'wp_mail_content_type', 'true_content_type' );
+add_filter( 'wp_mail_content_type', 'true_content_type' );
 
-//  function true_content_type( $content_type ) {
-//     return 'text/html';
-//  }
+ function true_content_type( $content_type ) {
+    return 'text/html';
+ }
 
 
 add_action( 'init', function () {
@@ -81,52 +81,52 @@ add_action( 'init', function () {
 
 });
 
-	function getGallery() {
-		$args = array(
-			'post_type' => 'Gallery page',
-			'orderby'   => 'date',
-			'order'     => 'ASC',
-			'numberposts' => -1,
-		);
+function getGallery() {
+	$args = array(
+		'post_type' => 'Gallery page',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
 
-		$galleryPages = [];
+	$galleryPages = [];
 
-		foreach(get_posts($args) as $post) {
-			$extra = get_fields($post->ID);
-			$extra['editor'] = apply_filters( 'the_content', $post->post_content );
-			$extra['title'] = $post->post_title;
-			$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
-			$extra['ID'] = $post->ID;
+	foreach(get_posts($args) as $post) {
+		$extra = get_fields($post->ID);
+		$extra['editor'] = apply_filters( 'the_content', $post->post_content );
+		$extra['title'] = $post->post_title;
+		$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+		$extra['ID'] = $post->ID;
 
-			$galleryPages[] = $extra;
-		}
-
-		return $galleryPages;
+		$galleryPages[] = $extra;
 	}
 
-	function getGalleryProjectByID($id) {
-		$postId = [];
-		$postId[0] = $id;
+	return $galleryPages;
+}
 
-		$args = array(
-			'post_type' => 'Gallery page',
-			'include'     => $postId,
-		);
+function getGalleryProjectByID($id) {
+	$postId = [];
+	$postId[0] = $id;
 
-		$galleryPages = [];
+	$args = array(
+		'post_type' => 'Gallery page',
+		'include'     => $postId,
+	);
 
-		foreach(get_posts($args) as $post) {
-			$extra = get_fields($post->ID);
-			$extra['editor'] = apply_filters( 'the_content', $post->post_content );
-			$extra['title'] = $post->post_title;
-			$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
-			$extra['ID'] = $post->ID;
+	$galleryPages = [];
 
-			$galleryPages[] = $extra;
-		}
+	foreach(get_posts($args) as $post) {
+		$extra = get_fields($post->ID);
+		$extra['editor'] = apply_filters( 'the_content', $post->post_content );
+		$extra['title'] = $post->post_title;
+		$extra['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+		$extra['ID'] = $post->ID;
 
-		return $galleryPages;
+		$galleryPages[] = $extra;
 	}
+
+	return $galleryPages;
+}
 
 
 
