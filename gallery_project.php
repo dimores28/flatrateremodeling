@@ -78,10 +78,13 @@ if(!empty($id)) {
               Schedule an in-home appointment
           </p>
           <form class="feedback__form" id="smallForm">
+            <div class="form__loader"><span class="loader"></span></div>
               <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
               <input class="form-control" id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
               <input class="form-control" id="smallFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
+              <div class="popup__alert"></div>
               <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
+              
           </form>
       </div>
     </div>
@@ -96,10 +99,12 @@ if(!empty($id)) {
     <div class="contact-secton__container">
         <div class="contact-secton__form" style="padding: 0; border: none; background: #fff;">
         <form class="feedback__form" id="bigForm">
+            <div class="form__loader"><span class="loader"></span></div>
             <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
             <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
             <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
             <textarea class="form-control" id="bigFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+            <div class="popup__alert"></div>
             <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px; text-transform: uppercase; letter-spacing: 2px;" />
         </form>
         </div>

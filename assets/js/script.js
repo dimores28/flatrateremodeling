@@ -322,7 +322,7 @@ popup__form?.addEventListener("submit", async function (e) {
   let error =
     isValidEmail(popupEmail.value) &&
     isValidPhone(popupPhone.value) &&
-    isValidName(popupUserName.value);
+    isValidName(popupName.value);
 
   let formData = new FormData(popup__form);
 
@@ -391,9 +391,9 @@ big__form?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   let error =
-    isValidEmail(popupEmail.value) &&
-    isValidPhone(popupPhone.value) &&
-    isValidName(popupUserName.value);
+    isValidEmail(bigFormEmail.value) &&
+    isValidPhone(bigFormPhone.value) &&
+    isValidName(bigFormName.value);
 
   let formData = new FormData(big__form);
 
@@ -462,9 +462,9 @@ smallForm?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   let error =
-    isValidEmail(popupEmail.value) &&
-    isValidPhone(popupPhone.value) &&
-    isValidName(popupUserName.value);
+    isValidEmail(smallFormEmail.value) &&
+    isValidPhone(smallFormPhone.value) &&
+    isValidName(smallFormName.value);
 
   let formData = new FormData(smallForm);
 

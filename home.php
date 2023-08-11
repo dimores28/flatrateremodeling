@@ -28,6 +28,7 @@ Template Name: Home
               <div class="hero__right animate__animated animate__fadeInRight">
                 <div class="feedback feedback-black">
                   <form class="feedback__form " id="smallForm">
+                    <div class="form__loader"><span class="loader"></span></div>
                     <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
                     <input class="form-control " id="smallFormEmail" name="yourEmail" type="email" placeholder="Email"
                       aria-label="your email" />
@@ -35,6 +36,7 @@ Template Name: Home
                       aria-label="your phone" />
                     <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message"
                       aria-label="your message"></textarea>
+                      <div class="popup__alert"></div>
                     <input type="submit" class="btn form-btn" value="Send" />
                   </form>
                 </div>

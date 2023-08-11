@@ -287,6 +287,7 @@ template {
 }
 
 .feedback__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -2690,9 +2691,7 @@ body.lock {
 }
 
 .form__loader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2708,6 +2707,7 @@ body.lock {
   background-color: rgba(117, 117, 117, 0.5);
   opacity: 0;
   visibility: hidden;
+  border: 1px solid rgba(117, 117, 117, 1);
 }
 
 .popup__loader {
@@ -2718,8 +2718,15 @@ body.lock {
 }
 
 ._sending .form__loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
   visibility: visible;
+  z-index: 10;
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .popup__alert {

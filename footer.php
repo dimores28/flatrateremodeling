@@ -83,6 +83,7 @@
       </div>
       <div class="feedback feedback-black">
         <form class="feedback__form popup__form" id="popup__form">
+          <div class="form__loader"><span class="loader"></span></div>
           <input
             class="form-control popup__name"
             name="yourName"
@@ -114,6 +115,7 @@
             aria-label="your message"
             id="popup__message"
           ></textarea>
+          <div class="popup__alert"></div>
           <input type="submit" class="btn form-btn" value="Send" />
         </form>
       </div>
