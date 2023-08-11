@@ -703,6 +703,7 @@ input::placeholder {
   width: 100%;
   z-index: 100;
   transition: all 0.3s ease-in;
+  padding-top: 10px;
 }
 
 .header__contacts {
@@ -2367,13 +2368,14 @@ body.lock {
 .gallery__container {
   max-width: 1140px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   height: 100%;
 }
 
 .gallery__section {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .gallery__section-heading {
@@ -2641,6 +2643,7 @@ body.lock {
 /*-----------------------------------------------------------------------------------------------------*/
 .aside-map {
   max-width: 360px;
+  padding: 10px;
 }
 
 .aside-map iframe {
