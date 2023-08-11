@@ -2649,3 +2649,119 @@ body.lock {
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.form__loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(117, 117, 117, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup__loader {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 10;
+}
+
+._sending .form__loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__alert {
+  display: none;
+}
+
+.alert__msg {
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 16px;
+  text-align: center;
+}
+
+._show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+  z-index: 1;
+  width: 100%;
+  color: #842029;
+  background-color: #f8d7da;
+}
+
+._show__success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+  z-index: 1;
+  width: 100%;
+  color: #0d3926;
+  background-color: #d1e7dd;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/

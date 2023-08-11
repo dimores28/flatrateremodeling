@@ -82,33 +82,37 @@
         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
       </div>
       <div class="feedback feedback-black">
-        <form class="feedback__form">
+        <form class="feedback__form popup__form" id="popup__form">
           <input
-            class="form-control"
+            class="form-control popup__name"
             name="yourName"
             type="text"
             placeholder="Name"
             aria-label="your name"
+            id="popup__name"
           />
           <input
             class="form-control"
             name="yourEmail"
             type="email"
-            placeholder="Name"
+            placeholder="Email"
             aria-label="your email"
+            id="popup__email"
           />
           <input
             class="form-control"
             name="yourPhone"
             type="text"
-            placeholder="Name"
+            placeholder="Phone"
             aria-label="your phone"
+            id="popup__phone"
           />
           <textarea
             class="form-control"
             name="yourMessage"
             placeholder="Message"
             aria-label="your message"
+            id="popup__message"
           ></textarea>
           <input type="submit" class="btn form-btn" value="Send" />
         </form>

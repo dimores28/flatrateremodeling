@@ -53,11 +53,11 @@ Template Name: Testimonials
         Schedule A Free Consultation
         </h2>
         <div class="feedback">
-        <form class="feedback__form">
-            <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
-            <input class="form-control" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
-            <input class="form-control" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
-            <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+       <form class="feedback__form" id="smallForm">
+            <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+            <input class="form-control" id="smallFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
+            <input class="form-control" id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
+            <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
             <button type="submit" class="aside-form__btn">
             <span>Send</span>
             <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>

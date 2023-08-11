@@ -27,13 +27,13 @@ Template Name: Home
               </div>
               <div class="hero__right animate__animated animate__fadeInRight">
                 <div class="feedback feedback-black">
-                  <form class="feedback__form">
-                    <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
-                    <input class="form-control" name="yourEmail" type="email" placeholder="Email"
+                  <form class="feedback__form " id="smallForm">
+                    <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+                    <input class="form-control " id="smallFormEmail" name="yourEmail" type="email" placeholder="Email"
                       aria-label="your email" />
-                    <input class="form-control" name="yourPhone" type="text" placeholder="Phone"
+                    <input class="form-control " id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone"
                       aria-label="your phone" />
-                    <textarea class="form-control" name="yourMessage" placeholder="Message"
+                    <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message"
                       aria-label="your message"></textarea>
                     <input type="submit" class="btn form-btn" value="Send" />
                   </form>
