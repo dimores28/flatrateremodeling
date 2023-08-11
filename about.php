@@ -41,8 +41,8 @@ Template Name: About
               <img src="<?php bloginfo('template_url'); ?>/assets/img/why_us.jpg" width="1348" height="520" alt="why_us" />
             </div>
             <div class="why-us__content">
-              <h3 class="why-us__title">Why choose us?</h3>
-              <hr class="devider" color="#bb945b" size="3px" />
+              <!-- <h3 class="why-us__title">Why choose us?</h3> -->
+              <!-- <hr class="devider" color="#bb945b" size="3px" /> -->
               <p class="why-us__text">
                 We are also an environmentally friendly company with our energy
                 efficient products. We offer a variety of insulated windows and
