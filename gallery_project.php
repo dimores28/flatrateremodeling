@@ -71,22 +71,19 @@ if(!empty($id)) {
      </div>
     </div>
     <aside class="side-column-section__aside ">
-    <div class="aside-form">
-        <h2 class="aside-form__title">
-        Schedule A Free Consultation
-        </h2>
-        <div class="feedback">
-        <form class="feedback__form" id="smallForm">
-            <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
-            <input class="form-control" id="smallFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
-            <input class="form-control" id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
-            <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-            <button type="submit" class="aside-form__btn">
-            <span>Send</span>
-            <i aria-hidden="true" class="fas fa-long-arrow-alt-right"></i>
-            </button>
-        </form>
-        </div>
+    <div class="aside-form" style="padding: 0px; margin-bottom:20px;">
+        <div class="contact-secton__form">
+          <h2 class="contact-secton__title">Get a FREE Estimate</h2>
+          <p class="contact-secton__sub-title">
+              Schedule an in-home appointment
+          </p>
+          <form class="feedback__form" id="smallForm">
+              <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+              <input class="form-control" id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
+              <input class="form-control" id="smallFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
+              <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
+          </form>
+      </div>
     </div>
     <div class="aside-map">
       <?php if(!empty($body)) { ?>
@@ -97,17 +94,13 @@ if(!empty($id)) {
 </div>
 <section class="contact-secton">
     <div class="contact-secton__container">
-        <div class="contact-secton__form">
-        <h2 class="contact-secton__title">Get a FREE Estimate</h2>
-        <p class="contact-secton__sub-title">
-            Schedule an in-home appointment
-        </p>
-         <form class="feedback__form" id="bigForm">
+        <div class="contact-secton__form" style="padding: 0; border: none; background: #fff;">
+        <form class="feedback__form" id="bigForm">
             <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
             <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
             <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
-            <textarea class="form-control" id="bigFormEmail" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-            <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
+            <textarea class="form-control" id="bigFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+            <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px; text-transform: uppercase; letter-spacing: 2px;" />
         </form>
         </div>
         <div class="contact-secton__info">
