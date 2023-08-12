@@ -23,9 +23,9 @@
       ?>
         <div class="last-post__item">
           <div class="last-post__data"><?php echo the_time('F j'); ?></div>
-          <p class="last-post__title">
+          <a class="last-post__title" href="<?php echo get_the_permalink(); ?>">
             <?php the_title(); ?>
-          </p>
+          </a>
         </div>
 
       <?php 
