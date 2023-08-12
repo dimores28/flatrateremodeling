@@ -57,10 +57,10 @@
     <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
-        <a class="sns__link" href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-yelp"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-google"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-instagram"></i></a>
+        <a class="sns__link" href="https://www.facebook.com/flatrateremodelingla"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="sns__link" href="https://twitter.com/flatrateremodel"><i class="fa-brands fa-twitter"></i></a>
+        <a class="sns__link" href="https://www.google.com/#q=flat+rate+remodeling"><i class="fa-brands fa-google"></i></a>
+        <a class="sns__link" href="https://www.instagram.com/flatrateremodeling"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </div>
