@@ -1061,6 +1061,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .last-post__title {
   color: #fff;

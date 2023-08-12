@@ -7,24 +7,31 @@
     </div>
     <div class="last-post">
       <h3 class="last-post__heading footer-title">RECENT POSTS</h3>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
+
+      <?php
+        global $post;
+
+        $myposts = get_posts([ 
+          'numberposts' => 3,
+          'order'       => 'DESC',
+          'category'    => 0
+        ]);
+
+        if( $myposts ){
+          foreach( $myposts as $post ){
+                setup_postdata( $post );
+      ?>
+        <div class="last-post__item">
+          <div class="last-post__data"><?php echo the_time('F j'); ?></div>
+          <p class="last-post__title">
+            <?php the_title(); ?>
+          </p>
+        </div>
+
+      <?php 
+            }
+          } wp_reset_postdata(); // Сбрасываем $post 
+      ?>
     </div>
     <div class="contact">
       <h3 class="contacts__title footer-title">CONTACT INFO</h3>
@@ -38,7 +45,7 @@
         <span>tal@flatrateremodeling.com</span>
       </a>
 
-      <a class="contacts__link" href="#">Privacy Policy</a>
+      <a class="contacts__link" href="https://flatrateremodeling.semempires.com/privacy-policy">Privacy Policy</a>
     </div>
     <div class="instagram-post">
       <h3 class="instagram-post__title footer-title">PHOTO STREAM</h3>
