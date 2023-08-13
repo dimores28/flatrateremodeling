@@ -525,7 +525,7 @@ input::placeholder {
 
 .gallery-slider__text {
   position: absolute;
-  top: -18px;
+  top: 0px;
   left: 0;
   color: #fff;
   font-family: Montserrat, Sans-serif;
@@ -1189,6 +1189,10 @@ input::placeholder {
 .services__img img {
   width: 100%;
   height: 294px;
+}
+
+.services__title {
+  margin: 20px 0;
 }
 
 .services__title a {
