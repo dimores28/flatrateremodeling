@@ -36,7 +36,7 @@ Template Name: Home
                       aria-label="your phone" />
                     <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message"
                       aria-label="your message"></textarea>
-                      <div class="popup__alert"></div>
+                      <div class="smallForm__alert"></div>
                     <input type="submit" class="btn form-btn" value="Send" />
                   </form>
                 </div>

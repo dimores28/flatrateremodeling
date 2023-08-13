@@ -407,21 +407,21 @@ bigForm?.addEventListener("submit", async function (e) {
 
     if (response.ok) {
       let result = await response.json();
-      let alertMsg = document.querySelector(".popup__alert");
+      let alertMsg = document.querySelector(".bigForm__alert");
       alertMsg.innerHTML =
         '<p class="alert__msg" >Your message has been sent!!!<p/>';
       alertMsg.classList.add("_show__success");
       bigForm.reset();
       bigForm.classList.remove("_sending");
     } else {
-      let alertMsg = document.querySelector(".popup__alert");
+      let alertMsg = document.querySelector(".bigForm__alert");
       alertMsg.innerHTML = '<p class="alert__msg" >Error!!!<p/>';
       alertMsg.classList.add("_show");
       console.log(response.data);
       bigForm.classList.remove("_sending");
     }
   } else {
-    let alertMsg = document.querySelector(".popup__alert");
+    let alertMsg = document.querySelector(".bigForm__alert");
     alertMsg.innerHTML =
       '<p class="alert__msg" >Fill in required fields!!!<p/>';
     alertMsg.classList.add("_show");
@@ -481,21 +481,21 @@ smallForm?.addEventListener("submit", async function (e) {
 
     if (response.ok) {
       let result = await response.json();
-      let alertMsg = document.querySelector(".popup__alert");
+      let alertMsg = document.querySelector(".smallForm__alert");
       alertMsg.innerHTML =
         '<p class="alert__msg" >Your message has been sent!!!<p/>';
       alertMsg.classList.add("_show__success");
       smallForm.reset();
       smallForm.classList.remove("_sending");
     } else {
-      let alertMsg = document.querySelector(".popup__alert");
+      let alertMsg = document.querySelector(".smallForm__alert");
       alertMsg.innerHTML = '<p class="alert__msg" >Error!!!<p/>';
       alertMsg.classList.add("_show");
       console.log(response.data);
       smallForm.classList.remove("_sending");
     }
   } else {
-    let alertMsg = document.querySelector(".popup__alert");
+    let alertMsg = document.querySelector(".smallForm__alert");
     alertMsg.innerHTML =
       '<p class="alert__msg" >Fill in required fields!!!<p/>';
     alertMsg.classList.add("_show");

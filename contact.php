@@ -27,7 +27,7 @@ Template Name: Contact
             <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
             <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
             <textarea class="form-control" id="bigFormEmail" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-            <div class="popup__alert"></div>
+            <div class="bigForm__alert"></div>
             <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
         </form>
         </div>
