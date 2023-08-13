@@ -1113,6 +1113,20 @@ input::placeholder {
   padding: 40px 0;
 }
 
+@media (max-width: 1156px){
+  .copyright__body {
+    width: 84%;
+  }
+}
+
+@media (max-width: 870px){
+  .copyright__body {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 650px) {
   .copyright {
     flex-direction: column-reverse;

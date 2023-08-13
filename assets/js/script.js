@@ -471,7 +471,7 @@ smallForm?.addEventListener("submit", async function (e) {
   if (error) {
     smallForm.classList.add("_sending");
 
-    let response = await fetch("mail.php", {
+    let response = await fetch("https://flatrateremodeling.semempires.com/mail.php", {
       method: "POST",
       body: formData,
     });

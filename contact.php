@@ -21,7 +21,7 @@ Template Name: Contact
         <p class="contact-secton__sub-title">
             Schedule an in-home appointment
         </p>
-        <form class="feedback__form" id="bigForm">
+        <form class="feedback__form" id="big__form">
             <form class="feedback__form " id="smallForm">
             <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
             <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
