@@ -386,8 +386,8 @@ bigFormEmail?.addEventListener("input", function () {
   }
 });
 
-const big__form = document.querySelector("#big__form");
-big__form?.addEventListener("submit", async function (e) {
+const bigForm = document.querySelector("#bigForm");
+bigForm?.addEventListener("submit", async function (e) {
   e.preventDefault();
 
   let error =
@@ -395,10 +395,10 @@ big__form?.addEventListener("submit", async function (e) {
     isValidPhone(bigFormPhone.value) &&
     isValidName(bigFormName.value);
 
-  let formData = new FormData(big__form);
+  let formData = new FormData(bigForm);
 
   if (error) {
-    big__form.classList.add("_sending");
+    bigForm.classList.add("_sending");
 
     let response = await fetch("mail.php", {
       method: "POST",
@@ -411,14 +411,14 @@ big__form?.addEventListener("submit", async function (e) {
       alertMsg.innerHTML =
         '<p class="alert__msg" >Your message has been sent!!!<p/>';
       alertMsg.classList.add("_show__success");
-      big__form.reset();
-      big__form.classList.remove("_sending");
+      bigForm.reset();
+      bigForm.classList.remove("_sending");
     } else {
       let alertMsg = document.querySelector(".popup__alert");
       alertMsg.innerHTML = '<p class="alert__msg" >Error!!!<p/>';
       alertMsg.classList.add("_show");
       console.log(response.data);
-      big__form.classList.remove("_sending");
+      bigForm.classList.remove("_sending");
     }
   } else {
     let alertMsg = document.querySelector(".popup__alert");
@@ -471,10 +471,13 @@ smallForm?.addEventListener("submit", async function (e) {
   if (error) {
     smallForm.classList.add("_sending");
 
-    let response = await fetch("https://flatrateremodeling.semempires.com/mail.php", {
-      method: "POST",
-      body: formData,
-    });
+    let response = await fetch(
+      "https://flatrateremodeling.semempires.com/mail.php",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (response.ok) {
       let result = await response.json();
