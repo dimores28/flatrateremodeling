@@ -15,27 +15,29 @@ require( 'wp-load.php' );
  //Тело письма
  $body = '<h1>Flatrateremodeling website!</h1>';
 
+ //------------------------------------------------------//
  //Пример name="popupUserName"
-//  $popupUserName = trim(!empty($_POST['popupUserName']));
-//  if($popupUserName) {
-//     $body.='<p><strong>User Name:</strong> '.$_POST['popupUserName'].'</p>';
-//  }
+ $yourName = trim(!empty($_POST['yourName']));
+ if($yourName) {
+    $body.='<p><strong>User Name:</strong> '.$_POST['yourName'].'</p>';
+ }
  
- 
-//  $popupEmail = trim(!empty($_POST['popupEmail']));
-//  if($popupEmail){
-//   $body.='<p><strong>E-mail:</strong> '.$_POST['popupEmail'].'</p>';
-//  }
+ $yourEmail = trim(!empty($_POST['yourEmail']));
+ if($yourEmail){
+  $body.='<p><strong>E-mail:</strong> '.$_POST['yourEmail'].'</p>';
+ }
 
-//  $popupPhone = trim(!empty($_POST['popupPhone']));
-//  if($popupPhone){
-//     $body.='<p><strong>Phone:</strong> '.$_POST['popupPhone'].'</p>';
-//  }
+ $yourPhone = trim(!empty($_POST['yourPhone']));
+ if($yourPhone){
+    $body.='<p><strong>Phone:</strong> '.$_POST['yourPhone'].'</p>';
+ }
  
-//  $popupMessage = trim(!empty($_POST['popupMessage']));
-//  if($popupMessage){
-//      $body.='<p><strong>Message:</strong> '.$_POST['popupMessage'].'</p>';
-//  }
+ $yourMessage = trim(!empty($_POST['yourMessage']));
+ if($yourMessage){
+     $body.='<p><strong>Message:</strong> '.$_POST['yourMessage'].'</p>';
+ }
+
+ //------------------------------------------------------//
 
 
    

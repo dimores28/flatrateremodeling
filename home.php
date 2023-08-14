@@ -22,19 +22,21 @@ Template Name: Home
                     We have the experience,passion and resources to make your project come to life while running
                     smoothly
                   </div>
-                  <a href="#" class="hero__linck">Contact Us</a>
+                  <a href="https://flatrateremodeling.semempires.com/contact-us/" class="hero__linck">Contact Us</a>
                 </div>
               </div>
               <div class="hero__right animate__animated animate__fadeInRight">
                 <div class="feedback feedback-black">
-                  <form class="feedback__form">
-                    <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
-                    <input class="form-control" name="yourEmail" type="email" placeholder="Email"
+                  <form class="feedback__form " id="smallForm">
+                    <div class="form__loader"><span class="loader"></span></div>
+                    <input class="form-control" id="smallFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+                    <input class="form-control " id="smallFormEmail" name="yourEmail" type="email" placeholder="Email"
                       aria-label="your email" />
-                    <input class="form-control" name="yourPhone" type="text" placeholder="Phone"
+                    <input class="form-control " id="smallFormPhone" name="yourPhone" type="text" placeholder="Phone"
                       aria-label="your phone" />
-                    <textarea class="form-control" name="yourMessage" placeholder="Message"
+                    <textarea class="form-control" id="smallFormMessage" name="yourMessage" placeholder="Message"
                       aria-label="your message"></textarea>
+                      <div class="smallForm__alert"></div>
                     <input type="submit" class="btn form-btn" value="Send" />
                   </form>
                 </div>

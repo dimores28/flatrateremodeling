@@ -7,24 +7,31 @@
     </div>
     <div class="last-post">
       <h3 class="last-post__heading footer-title">RECENT POSTS</h3>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
-      <div class="last-post__item">
-        <div class="last-post__data">20 July</div>
-        <p class="last-post__title">
-          Beautiful Bathroom Remodeling Ideas – Design Trends and Decor for 2023
-        </p>
-      </div>
+
+      <?php
+        global $post;
+
+        $myposts = get_posts([ 
+          'numberposts' => 3,
+          'order'       => 'DESC',
+          'category'    => 0
+        ]);
+
+        if( $myposts ){
+          foreach( $myposts as $post ){
+                setup_postdata( $post );
+      ?>
+        <div class="last-post__item">
+          <div class="last-post__data"><?php echo the_time('F j'); ?></div>
+          <a class="last-post__title" href="<?php echo get_the_permalink(); ?>">
+            <?php the_title(); ?>
+          </a>
+        </div>
+
+      <?php 
+            }
+          } wp_reset_postdata(); // Сбрасываем $post 
+      ?>
     </div>
     <div class="contact">
       <h3 class="contacts__title footer-title">CONTACT INFO</h3>
@@ -38,7 +45,7 @@
         <span>tal@flatrateremodeling.com</span>
       </a>
 
-      <a class="contacts__link" href="#">Privacy Policy</a>
+      <a class="contacts__link" href="https://flatrateremodeling.semempires.com/privacy-policy">Privacy Policy</a>
     </div>
     <div class="instagram-post">
       <h3 class="instagram-post__title footer-title">PHOTO STREAM</h3>
@@ -57,10 +64,10 @@
     <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
-        <a class="sns__link" href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-yelp"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-google"></i></a>
-        <a class="sns__link" href=""><i class="fa-brands fa-instagram"></i></a>
+        <a class="sns__link" href="https://www.facebook.com/flatrateremodelingla"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="sns__link" href="https://twitter.com/flatrateremodel"><i class="fa-brands fa-twitter"></i></a>
+        <a class="sns__link" href="https://www.google.com/#q=flat+rate+remodeling"><i class="fa-brands fa-google"></i></a>
+        <a class="sns__link" href="https://www.instagram.com/flatrateremodeling"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </div>
@@ -82,34 +89,40 @@
         <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
       </div>
       <div class="feedback feedback-black">
-        <form class="feedback__form">
+        <form class="feedback__form popup__form" id="popup__form">
+          <div class="form__loader"><span class="loader"></span></div>
           <input
-            class="form-control"
+            class="form-control popup__name"
             name="yourName"
             type="text"
             placeholder="Name"
             aria-label="your name"
+            id="popup__name"
           />
           <input
             class="form-control"
             name="yourEmail"
             type="email"
-            placeholder="Name"
+            placeholder="Email"
             aria-label="your email"
+            id="popup__email"
           />
           <input
             class="form-control"
             name="yourPhone"
             type="text"
-            placeholder="Name"
+            placeholder="Phone"
             aria-label="your phone"
+            id="popup__phone"
           />
           <textarea
             class="form-control"
             name="yourMessage"
             placeholder="Message"
             aria-label="your message"
+            id="popup__message"
           ></textarea>
+          <div class="popup__alert"></div>
           <input type="submit" class="btn form-btn" value="Send" />
         </form>
       </div>

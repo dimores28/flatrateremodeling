@@ -89,22 +89,22 @@
 
       <ul class="header__right">
         <li>
-          <a href="#" class="" target="_blank">
+          <a href="https://www.facebook.com/flatrateremodelingla" class="" target="_blank">
 						<i class="fab fa-facebook-f"></i>					
           </a>
         </li>
         <li>
-          <a href="#" class="" target="_blank">
-						<i class="fab fa-yelp"></i>			
+          <a href="https://twitter.com/flatrateremodel" class="" target="_blank">
+						<i class="fab fa-twitter"></i>			
           </a>
         </li>
         <li>
-          <a href="#" class="" target="_blank">
+          <a href="https://www.google.com/#q=flat+rate+remodeling" class="" target="_blank">
 						<i class="fab fa-google"></i>			
           </a>
         </li>
         <li>
-          <a href="#" class="" target="_blank">
+          <a href="https://www.instagram.com/flatrateremodeling" class="" target="_blank">
 						<i class="fab fa-instagram"></i>				
           </a>
         </li>

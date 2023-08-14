@@ -1,6 +1,6 @@
 <?php
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
 add_action( 'wp_enqueue_scripts', function() {
 	// wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css');
@@ -34,9 +34,11 @@ add_theme_support('custom-logo');
 
  function mihdan_send_smtp_email( PHPMailer $phpmailer ) {
 	$phpmailer->isSMTP();
-	$phpmailer->Host       = 'mail.adm.tools';
+	$phpmailer->Host       = 'smtp.gmail.com';
 	$phpmailer->SMTPAuth   = true;
 	$phpmailer->Port       = 465;
+	$phpmailer->Username = 'dimores95@gmail.com';
+	$phpmailer->Password = 'tjdsjpgjemfdogqb';
 	// $phpmailer->Username   = 'tal@flatrateremodeling.com';
 	// $phpmailer->Password   = 'Tivacleaners2023!';
 	$phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;

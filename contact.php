@@ -17,17 +17,19 @@ Template Name: Contact
 <section class="contact-secton">
     <div class="contact-secton__container">
         <div class="contact-secton__form">
-            <h2 class="contact-secton__title">Get a FREE Estimate</h2>
-            <p class="contact-secton__sub-title">
-                Schedule an in-home appointment
-            </p>
-            <form class="feedback__form">
-                <input class="form-control" name="yourName" type="text" placeholder="Name" aria-label="your name" />
-                <input class="form-control" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
-                <input class="form-control" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
-                <textarea class="form-control" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-                <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
-            </form>
+        <h2 class="contact-secton__title">Get a FREE Estimate</h2>
+        <p class="contact-secton__sub-title">
+            Schedule an in-home appointment
+        </p>
+        <form class="feedback__form" id="bigForm">
+            <div class="form__loader"><span class="loader"></span></div>
+            <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name" />
+            <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone" />
+            <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email" />
+            <textarea class="form-control" id="bigFormEmail" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+            <div class="bigForm__alert"></div>
+            <input type="submit" class="btn form-btn" value="Scheudle an Appointment" />
+        </form>
         </div>
         <div class="contact-secton__info">
         <h2 class="contact-secton__row contact-secton__row_head">
