@@ -1873,8 +1873,80 @@ body.lock {
   margin-top: 40px;
 }
 
+.post__date {
+  margin-bottom: 20px;
+}
+
 .article__body .blog__posts .post__img {
   max-height: 200px;
+}
+
+.article__body .blog__posts .post {
+  border: none;
+}
+
+.article__body .blog__posts .post__title {
+  padding: 0;
+  margin-bottom: 10px;
+}
+.article__body .blog__posts .post__text {
+  padding: 0;
+}
+
+.article__body .blog__posts .post__readMore {
+  padding: 0;
+}
+
+@supports not (-webkit-line-clamp: 3) {
+  .article__body .blog__posts .post__title {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 3.6em;
+  }
+
+  .article__body .blog__posts .post__title::before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 1em;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(50%, #fff)
+    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%);
+  }
+}
+
+@supports not (-webkit-line-clamp: 4) {
+  .article__body .blog__posts .post__text {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 4.8em;
+  }
+
+  .article__body .blog__posts .post__text::before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 1em;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(50%, #fff)
+    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%);
+  }
 }
 
 .article__heading {

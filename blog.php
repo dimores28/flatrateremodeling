@@ -32,7 +32,7 @@ Template Name: Blog
                                     array('alt'   => "Post thumbnail",)
                                  );
                               } else { ?>
-                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/post-img.webp"" alt="Post thumbnail" />
+                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/post-img.webp" alt="Post thumbnail" />
                               <?php } ?>
                            </a>
                         </div>
