@@ -14,10 +14,11 @@ if(!empty($id)) {
 ?>
 
 <!-- <pre> <?php var_dump($body); ?> </pre> -->
-
-<?php if(!empty($body)) { ?>
-   <?php echo $body[0]["editor"]; ?>
-<?php } ?> 
+<div class="editor-gallery" style="margin-bottom: 30px; overflow: hidden;">
+  <?php if(!empty($body)) { ?>
+    <?php echo $body[0]["editor"]; ?>
+  <?php } ?> 
+</div>
 
 <div class="side-column-section article__container" style="padding-top: 0;">
      
