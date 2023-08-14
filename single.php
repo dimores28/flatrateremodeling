@@ -72,7 +72,7 @@
                                   </a>
                                 </h3>
 
-                                <div class="post__date">June 16, 2023</div>
+                                <div class="post__date"><?php echo the_time('F j Y'); ?></div>
 
                                 <div class="post__text">
                                     <?php the_content(); ?>
