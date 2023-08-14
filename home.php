@@ -22,7 +22,7 @@ Template Name: Home
                     We have the experience,passion and resources to make your project come to life while running
                     smoothly
                   </div>
-                  <a href="#" class="hero__linck">Contact Us</a>
+                  <a href="https://flatrateremodeling.semempires.com/contact-us/" class="hero__linck">Contact Us</a>
                 </div>
               </div>
               <div class="hero__right animate__animated animate__fadeInRight">
