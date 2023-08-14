@@ -759,7 +759,7 @@ input::placeholder {
   margin-left: 6px;
 }
 
-.header__contacts .header__right a:hover i{
+.header__contacts .header__right a:hover i {
   transition: all 0.3s ease-in;
   color: #fff;
 }
@@ -2011,6 +2011,7 @@ body.lock {
 }
 
 .about__heading {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2025,7 +2026,6 @@ body.lock {
 }
 
 .about__heading h2 {
-  position: relative;
   padding: 150px 0 40px;
   color: #eceff3;
   font-family: montserrat, Sans-serif;
@@ -2036,14 +2036,10 @@ body.lock {
   text-align: center;
 }
 
-.about__heading h2::after {
+.devider__heading {
   position: absolute;
-  content: ;
   width: 75px;
-  height: 4px;
-  background-color: #bb945b;
-  left: 0;
-  right: 0;
+  transform: translate(0, 111px);
 }
 
 .about__bg {

@@ -14,6 +14,7 @@ Template Name: About
             />
             <div class="about__heading">
               <h2>ABOUT US</h2>
+              <hr class="devider__heading" color="#bb945b" size="8px" />
             </div>
           </div>
           <div class="about__body">
