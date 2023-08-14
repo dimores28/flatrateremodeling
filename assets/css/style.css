@@ -1874,6 +1874,10 @@ body.lock {
 }
 
 .post__date {
+  font-family: montserrat, Sans-serif;
+  line-height: 1.3em;
+  font-size: 12px;
+  color: #adadad;
   margin-bottom: 20px;
 }
 
@@ -1946,6 +1950,19 @@ body.lock {
       color-stop(50%, #fff)
     );
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%);
+  }
+}
+
+@media (max-width: 520px) {
+  .article__body .blog__posts {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
+
+@media (max-width: 520px) {
+  .article__body .blog__posts .post {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
