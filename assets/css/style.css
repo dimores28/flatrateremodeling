@@ -189,6 +189,11 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+input[type="submit"]:hover {
+  transition: all 0.3s ease-in;
+  opacity: 0.75;
+}
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -754,6 +759,11 @@ input::placeholder {
   margin-left: 6px;
 }
 
+.header__contacts .header__right a:hover i{
+  transition: all 0.3s ease-in;
+  color: #fff;
+}
+
 .header__navigaton {
   display: flex;
   align-items: center;
@@ -1158,6 +1168,11 @@ input::placeholder {
   width: 11px;
   text-decoration: none;
   color: #fff;
+}
+
+.sns__link:hover {
+  transition: all 0.3s ease-in;
+  color: #bb945b;
 }
 
 .footer-title {
