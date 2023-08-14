@@ -23,7 +23,8 @@ Template Name: About
             <div class="about__content">
               <h3 class="about__title">About us</h3>
               <hr class="devider" color="#bb945b" size="6px" />
-              <p class="about__text">
+              <div class="about__text">
+                <p>
                 Flat Rate Remodeling is a licensed, bonded and insured general
                 contracting company who guarantees to exceed your construction
                 and remodeling expectations. We work to create your dream home
@@ -35,23 +36,21 @@ Template Name: About
                 during your project. We work with premium architects and
                 designers to provide their expertise and skills to any room in
                 your home.
-                 We are also an environmentally friendly company with our energy
+              </p>
+              <p>
+                We are also an environmentally friendly company with our energy
                 efficient products. We offer a variety of insulated windows and
                 doors, natural tankless water heaterS, solar panels, wireless
                 generators and more. we always provide each and every customer
                 first-rate work at a flat rate price!
               </p>
+              </div>
+              
             </div>
-            <div class="why-us__img">
-              <img src="<?php bloginfo('template_url'); ?>/assets/img/why_us.jpg" alt="why_us" />
+            <div class="why-us__img"> 
+             <?php echo do_shortcode('[envira-gallery id="631"]'); ?>
             </div>
-            <div class="why-us__content">
-              <!-- <h3 class="why-us__title">Why choose us?</h3> -->
-              <!-- <hr class="devider" color="#bb945b" size="3px" /> -->
-              <p class="why-us__text">
-               
-              </p>
-            </div>
+            
           </div>
         </section>
 

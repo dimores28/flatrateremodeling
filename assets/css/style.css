@@ -2010,6 +2010,7 @@ body.lock {
 }
 
 .about__heading h2 {
+  position: relative;
   padding: 150px 0 40px;
   color: #eceff3;
   font-family: montserrat, Sans-serif;
@@ -2018,6 +2019,16 @@ body.lock {
   border-bottom: #eceff3 solid 2px;
   width: 100%;
   text-align: center;
+}
+
+.about__heading h2::after {
+  position: absolute;
+  content: ;
+  width: 75px;
+  height: 4px;
+  background-color: #bb945b;
+  left: 0;
+  right: 0;
 }
 
 .about__bg {
@@ -2038,7 +2049,7 @@ body.lock {
   display: grid;
   padding: 0 20px;
   -ms-grid-rows: auto 30px auto;
-  grid-template-areas: "about__img about__content" "why-us__content why-us__img";
+  grid-template-areas: "about__img about__content" "why-us__img why-us__img";
   -ms-grid-columns: minmax(50%, 1fr) 30px minmax(50%, 1fr);
   grid-template-columns: repeat(2, minmax(50%, 1fr));
   gap: 30px;
@@ -2091,23 +2102,6 @@ body.lock {
   max-height: 570px;
 }
 
-.why-us__content {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: why-us__content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  max-height: 570px;
-}
-
 .why-us__img {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
@@ -2123,15 +2117,7 @@ body.lock {
   grid-area: why-us__img;
 }
 
-.why-us__img img {
-  max-height: 570px;
-  max-width: 570px;
-  min-width: 0px;
-  height: auto;
-}
-
-.about__title,
-.why-us__title {
+.about__title {
   color: #606060;
   font-family: Montserrat, Sans-serif;
   font-size: 40px;
@@ -2140,13 +2126,13 @@ body.lock {
   margin-bottom: 15px;
 }
 
-.why-us__text,
 .about__text {
   color: #606060;
   font-family: Montserrat, Sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
+  text-indent: 15px;
 }
 
 .devider {
