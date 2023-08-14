@@ -42,14 +42,17 @@ const swiper = new Swiper(".main-slider", {
 });
 
 swiper.on("slideChange", function () {
-  const hero = document.querySelector(".hero");
-  document.querySelector(".hero").remove();
 
-  setTimeout(function () {
-    document
-      .querySelector(".swiper-slide-active .main-slider__img")
-      .appendChild(hero);
-  }, 200);
+  if(document.documentElement.clientWidth > 548) {
+    const hero = document.querySelector(".hero");
+    document.querySelector(".hero").remove();
+  
+    setTimeout(function () {
+      document
+        .querySelector(".swiper-slide-active .main-slider__img")
+        .appendChild(hero);
+    }, 200);
+  }
 });
 
 const gallerySlider = new Swiper(".gallery-slider", {
