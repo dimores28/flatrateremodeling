@@ -117,6 +117,17 @@
     </div>
     </aside>
 </div>
+
+<script>
+   setTimeout(function(){
+      const postContent = document.querySelectorAll('.post__text');
+      postContent?.forEach(elem => {
+         const text = elem.querySelector("p");
+         elem.innerText = text.innerText;
+      });
+   }, 100);
+   
+</script>
 <section class="get-started" style="margin-top: 20px;">
    <div class="get-started__body">
       <p class="get-started__text">Lets Get Started on Your Next Project!</p>
@@ -129,14 +140,4 @@
       </a>
    </div>
 </section>
-<script>
-   setTimeout(function(){
-      const postContent = document.querySelectorAll('.post__text');
-      postContent?.forEach(elem => {
-         const text = elem.querySelector("p");
-         elem.innerText = text.innerText;
-      });
-   }, 100);
-   
-</script>
 <?php get_footer();?>
