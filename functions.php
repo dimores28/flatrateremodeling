@@ -103,6 +103,50 @@ add_action( 'init', function () {
 
 	] );
 
+	register_post_type( 'Slider left', [
+		'label'  => 'Slider left',
+		'labels' => [
+			'name'               => 'Slider', // основное название для типа записи
+			'singular_name'      => 'Slide', // название для одной записи этого типа
+			'add_new'            => 'Adding slide', // для добавления новой записи
+			'add_new_item'       => 'Adding slide', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on slide', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found slide', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in slidecart', // если не было найдено в корзине
+			'menu_name'          => 'Slider left', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-format-gallery',
+		'supports'            => [ 'title'],  // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+
+	] );
+
+	register_post_type( 'Slider right', [
+		'label'  => 'Slider right',
+		'labels' => [
+			'name'               => 'Slider', // основное название для типа записи
+			'singular_name'      => 'Slide', // название для одной записи этого типа
+			'add_new'            => 'Adding slide', // для добавления новой записи
+			'add_new_item'       => 'Adding slide', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on slide', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found slide', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in slidecart', // если не было найдено в корзине
+			'menu_name'          => 'Slider right', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-format-gallery',
+		'supports'            => [ 'title'],  // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+
+	] );
+
 });
 
 function getGallery() {
@@ -166,6 +210,46 @@ function getSlider() {
 		$slide = get_fields($post->ID);
 		$slide['title'] = $post->post_title;
 		$slide['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+
+		$slider[] = $slide;
+	}
+
+	return $slider;
+}
+
+function getSliderLeft() {
+	$args = array(
+		'post_type' => 'Slider left',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
+
+	$slider = [];
+
+	foreach(get_posts($args) as $post) {
+		$slide = get_fields($post->ID);
+		$slide['title'] = $post->post_title;
+
+		$slider[] = $slide;
+	}
+
+	return $slider;
+}
+
+function getSliderRight() {
+	$args = array(
+		'post_type' => 'Slider right',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
+
+	$slider = [];
+
+	foreach(get_posts($args) as $post) {
+		$slide = get_fields($post->ID);
+		$slide['title'] = $post->post_title;
 
 		$slider[] = $slide;
 	}

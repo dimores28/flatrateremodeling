@@ -72,7 +72,7 @@ Template Name: Home
             <p><a href="https://vimeo.com/324901939">Jocelyn &amp; Fernando Rivero. Studio City, CA</a> from <a href="https://vimeo.com/user3235268">Roberto Garcia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
       </div>
    </div>
-   <section class="services">
+<section class="services">
   <h2 class="consultation__heding services__heading">
     Products & Services
     <span></span>
@@ -174,6 +174,8 @@ Template Name: Home
   </div>
 
 </section>
+
+
  <section class="main-gallery">
         <h2 class="gallery__header">Gallery</h2>
         <div class="gallery__actions">
@@ -184,109 +186,76 @@ Template Name: Home
           <div class="swiper gallery-slider">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">El Segundo</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-469838422.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Woodland Hills</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-876864896.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Pasadena</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1066000164.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">West Hollywood</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1148629398.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-            <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Topanga Canyon</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1148629418.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">Pacific Palisades</h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1172894166.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
+              <?foreach(getSliderLeft() as $lslide) { ?>
+                <div class="gallery-slider__slide swiper-slide">
+                  <h2 class="gallery-slider__text">
+                    <a href="<?php echo $lslide["gallery_post_linck"]; ?>">
+                      <?php echo $lslide["title"]; ?>
+                    </a>
+                  </h2>
+                  <img src="<?php echo $lslide["slide_image"]; ?>" class="gallery-slider__img" alt="slide image">
+                </div>
+              <?} ?>
+
             </div>
           </div>
     
           <div class="swiper gallery-slider">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Thousand Oaks</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1312027000.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Mulholland Dr</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1398692686.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Newport beach</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1450445015.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Glendale</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1453183714.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
-              <div class="gallery-slider__slide swiper-slide">
-                <h2 class="gallery-slider__text">
-                  <a href="#">Malibu</a>
-                </h2>
-                <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1458192765.jpg" class="gallery-slider__img" alt="slide image">
-              </div>
+              <?foreach(getSliderRight() as $rslide) { ?>
+                <div class="gallery-slider__slide swiper-slide">
+                  <h2 class="gallery-slider__text">
+                    <a href="<?php echo $rslide["gallery_post_linck"]; ?>">
+                      <?php echo $rslide["title"]; ?>
+                    </a>
+                  </h2>
+                  <img src="<?php echo $rslide["slide_image"]; ?>" class="gallery-slider__img" alt="slide image">
+                </div>
+              <?} ?>
+
             </div>
           </div>
         </div>
       </section>
+
       <section class="get-started">
         <div class="get-started__body">
-        <p class="get-started__text">Lets Get Started on Your Next Project!</p>
-        <a id="btn_open" 
-        class="get-started__button popup-link"
-        href="#popup_1">
-        Start here</a>
+          <p class="get-started__text">Lets Get Started on Your Next Project!</p>
+          <a id="btn_open" class="get-started__button popup-link" href="#popup_1">
+            Start here
+          </a>
         </div>
       </section>
-      <section class="reviews">
-      <h2 class="reviews-title">Customers Testimonials</h2>
-      <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
+
+      <section class="reviews" style="margin-top:30px; margin-bottom:30px;">
+            <h2 class="reviews-title" style="margin-bottom:30px;">
+              Customers Testimonials
+            </h2>
+            
+            <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
       </section>
 
       <?php echo do_shortcode('[logoshowcase arrows="false" autoplay="false" limit="4" extra_class="logo-slider"]'); ?>
 
-      <section class="consultation">
-       <h2 class="consultation__heding">
-       Schedule a Free Consultation
-       <span></span>
-       </h2>
-  
-        <div class="feedback">
-        <form class="feedback__form" id="bigForm"  style="max-width: 700px; margin: 50px auto;">
-          <div class="form__loader"><span class="loader"></span></div>
-          <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name">
-          <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email">
-          <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone">
-          <textarea class="form-control"id="bigFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
-          <div class="bigForm__alert"></div>
-          <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px;">
-        </form>
-        </div>
+      <section class="consultation" style="margin-top:30px;">
+          <h2 class="consultation__heding">
+            Schedule a Free Consultation
+            <span></span>
+          </h2>
+
+          <div class="feedback">
+            <form class="feedback__form" id="bigForm"  style="max-width: 700px; margin: 50px auto;">
+              <div class="form__loader"><span class="loader"></span></div>
+              <input class="form-control" id="bigFormName" name="yourName" type="text" placeholder="Name" aria-label="your name">
+              <input class="form-control" id="bigFormEmail" name="yourEmail" type="email" placeholder="Email" aria-label="your email">
+              <input class="form-control" id="bigFormPhone" name="yourPhone" type="text" placeholder="Phone" aria-label="your phone">
+              <textarea class="form-control"id="bigFormMessage" name="yourMessage" placeholder="Message" aria-label="your message"></textarea>
+              <div class="bigForm__alert"></div>
+              <input type="submit" class="btn form-btn" value="Send" style="max-width: 140px;">
+            </form>
+          </div>
       </section>
-
-
-   
-
-   <!-- <?php  the_content(); ?> -->
 </main>
 
 <?php get_footer();?>
