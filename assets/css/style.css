@@ -2632,6 +2632,13 @@ body.lock {
 
 .video-reviews__item {
   flex: 1 1 calc(50% - 15px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 760px){
+  .video-reviews__item {
+    flex: 1 1 100%;
+  }
 }
 
 .video-reviews__item iframe {
@@ -2639,9 +2646,9 @@ body.lock {
   height: 100%;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 540px) {
   .video-reviews__item {
-    flex: 1 1 100%;
+    flex-direction: column;
   }
 }
 

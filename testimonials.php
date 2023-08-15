@@ -16,37 +16,12 @@ Template Name: Testimonials
 
 <div class="side-column-section">
     <div class="side-column-section__content">
-        <div class="video-reviews">
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/324901939?h=602374f16d" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/286909320?h=3781620341" width="640" height="360"
-                frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/218251240?h=155908097a" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/211259329?h=3672dd59f3" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/185099317?h=4c38bca906" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/182506335?h=e3372ff8eb" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/226865052?h=94bc70079b" width="640" height="360"
-                frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="video-reviews__item">
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/185723653?h=3db3cc5f37" width="640" height="360"
-                frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <?php echo do_shortcode('[trustindex data-widget-id=2f56fbf184455915299619bfd6d]'); ?>
+
+        <?php  the_content(); ?>
+
+
     </div>
+    
     <aside class="side-column-section__aside">
     <div class="aside-form" style="margin-top: 12px;">
         <h2 class="aside-form__title">
