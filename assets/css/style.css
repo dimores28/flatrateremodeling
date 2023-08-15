@@ -2165,11 +2165,11 @@ body.lock {
   display: -ms-grid;
   display: grid;
   padding: 0 20px;
-  -ms-grid-rows: auto 30px auto;
+  /* -ms-grid-rows: auto 30px auto;
   grid-template-areas: "about__img about__content" "why-us__img why-us__img";
   -ms-grid-columns: minmax(50%, 1fr) 30px minmax(50%, 1fr);
   grid-template-columns: repeat(2, minmax(50%, 1fr));
-  gap: 30px;
+  gap: 30px; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2256,6 +2256,7 @@ body.lock {
   width: 100%;
   max-width: 125px;
   margin: 0px 0px 20px 0px;
+  height: 3px;
 }
 
 @media (max-width: 1100px) {
