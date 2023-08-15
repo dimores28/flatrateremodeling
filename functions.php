@@ -81,6 +81,28 @@ add_action( 'init', function () {
 
 	] );
 
+	register_post_type( 'Slider', [
+		'label'  => 'Slider',
+		'labels' => [
+			'name'               => 'Slider', // основное название для типа записи
+			'singular_name'      => 'Slide', // название для одной записи этого типа
+			'add_new'            => 'Adding slide', // для добавления новой записи
+			'add_new_item'       => 'Adding slide', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on slide', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found slide', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in slidecart', // если не было найдено в корзине
+			'menu_name'          => 'Slider', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-format-gallery',
+		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+
+	] );
+
 });
 
 function getGallery() {
