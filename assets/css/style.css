@@ -2198,7 +2198,7 @@ body.lock {
 }
 
 .about__img img {
-  width: 100%;
+  /* width: 100%; */
   min-width: 0px;
 }
 

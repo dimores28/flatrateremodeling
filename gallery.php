@@ -60,7 +60,11 @@ Template Name: Gallery
           <h2><?php echo $categoryKitchen[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="701"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryKitchen as $kitchen) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -81,7 +85,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
@@ -92,7 +96,11 @@ Template Name: Gallery
           <h2><?php echo $categoryBathroom[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="702"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryBathroom as $card) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -113,7 +121,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
@@ -124,7 +132,11 @@ Template Name: Gallery
           <h2><?php echo $categoryRemodeling[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="703"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryRemodeling as $card) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -145,7 +157,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
@@ -156,7 +168,11 @@ Template Name: Gallery
           <h2><?php echo $categoryRoom[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="704"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryRoom as $card) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -177,7 +193,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
@@ -188,7 +204,11 @@ Template Name: Gallery
           <h2><?php echo $categoryEnergy[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="705"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryEnergy as $card) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -209,7 +229,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
@@ -220,7 +240,11 @@ Template Name: Gallery
           <h2><?php echo $categoryEnclosure[0]["category"]; ?></h2>
         </div>
 
-        <div class="gallery__posts">
+        <div class="gallery__temp-posts">
+          <?php echo do_shortcode('[envira-gallery id="706"]'); ?>
+        </div>
+
+        <!-- <div class="gallery__posts">
           <?php foreach($categoryEnclosure as $card) {?>
             <article class="gallery-post">
               <div class="gallery-post__img">
@@ -241,7 +265,7 @@ Template Name: Gallery
               </h3>
             </article>
           <?php }?>
-        </div>
+        </div> -->
 
       </div>
     <?php } ?>
