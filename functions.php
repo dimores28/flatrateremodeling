@@ -152,6 +152,27 @@ function getGalleryProjectByID($id) {
 	return $galleryPages;
 }
 
+function getSlider() {
+	$args = array(
+		'post_type' => 'Slider',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
+
+	$slider = [];
+
+	foreach(get_posts($args) as $post) {
+		$slide = get_fields($post->ID);
+		$slide['title'] = $post->post_title;
+		$slide['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+
+		$slider[] = $slide;
+	}
+
+	return $slider;
+}
+
 
 
 //======================SVG===========================================//

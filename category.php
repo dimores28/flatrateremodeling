@@ -5,5 +5,5 @@ Template Name: Category
 ?>
 
 <pre>
-        <?php print_r(getGallery()); ?> 
+        <?php print_r(getSlider()); ?> 
 </pre>
