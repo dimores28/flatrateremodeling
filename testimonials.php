@@ -19,6 +19,24 @@ Template Name: Testimonials
 
         <?php  the_content(); ?>
 
+        <div class="testimonials-reviews">
+            <?php foreach(getReviews() as $review) {?>
+                <div class="testimonials-reviews__item">
+                    <div class="testimonials-reviews__head">
+                        <div class="testimonials-reviews__photo">
+                            <img src="<?php echo $review["img"];?>" alt="photo" width="70" height="70" />
+                        </div>
+                        <div>
+                            <h3 class="testimonials-reviews__fullname"><?php echo $review["title"];?></h3>
+                        </div>
+                    </div>
+
+                    <p class="testimonials-reviews__text">
+                        <?php echo $review["feedback_text"];?>
+                    </p>
+                </div>
+            <?php }?>
+        </div>
 
     </div>
     
@@ -46,33 +64,6 @@ Template Name: Testimonials
 
 </div>
 
-<style>
- .ti-widget[data-layout-id='16'][data-set-id='drop-shadow'] .ti-col-2 .ti-review-item  {
-  flex: 1 1 calc(50% - 14px) !important;
-  max-width: 50% !important;
-  position: relative;
-}
-
-.ti-widget[data-layout-id='16'][data-set-id='drop-shadow'] .ti-col-2 .ti-review-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../img/download.png) 83% 94% no-repeat;
-  background-size: 90%;
-  opacity: 0.04;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.ti-widget[data-layout-id="16"][data-set-id="drop-shadow"]
-  .ti-reviews-container
-  .ti-reviews-container-wrapper {
-  gap: 20px;
-}
-</style>
 
 <section class="get-started" style="margin-top: 20px;">
    <div class="get-started__body">
