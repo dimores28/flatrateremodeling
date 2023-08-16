@@ -5,13 +5,14 @@ Template Name: Contact
 ?>
 
 <?php get_header();?>
+<?php $CONTACTS = getContacts(); ?>
 <div class="map">
-    <?=php echo $CONTACTS['google_map']; ?>
-       <!-- <iframe
+  
+       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.1169640885055!2d-118.69911760000001!3d34.1433496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b93318414cb3%3A0xce1f41095700f13d!2sFlat%20Rate%20Home%20Remodeling%20%26%20Kitchen%20Builder!5e0!3m2!1sru!2sua!4v1691483640993!5m2!1sru!2sua"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
-    </iframe> -->
+    </iframe>
 </div>
 
 <main class="main">
@@ -37,18 +38,18 @@ Template Name: Contact
             Contact Information
         </h2>
         <div class="contact-secton__row">
-            <a href="tel:<?=php echo $CONTACTS['phone_one']; ?>">
-            Toll Free: <?=php echo $CONTACTS['phone_one']; ?>
+            <a href="tel:<?php echo $CONTACTS['phone_one']; ?>">
+            Toll Free: <?php echo $CONTACTS['phone_one']; ?>
             </a>
         </div>
         <div class="contact-secton__row">
-            <a href="tel:<?=php echo $CONTACTS['phone_two']; ?>">
-            Toll Free:<?=php echo $CONTACTS['phone_two']; ?>
+            <a href="tel:<?php echo $CONTACTS['phone_two']; ?>">
+            Toll Free:<?php echo $CONTACTS['phone_two']; ?>
             </a>
         </div>
         <div class="contact-secton__row">
-            <a href="mailto:<?=php echo $CONTACTS['email']; ?>" >
-            <?=php echo $CONTACTS['email']; ?>
+            <a href="mailto:<?php echo $CONTACTS['email']; ?>" >
+            <?php echo $CONTACTS['email']; ?>
             </a>
         </div>
         </div>

@@ -383,7 +383,6 @@ function getContacts() {
 	return $contacts[0];
 }
 
-	$CONTACTS = getContacts();
 
 
 //======================SVG===========================================//

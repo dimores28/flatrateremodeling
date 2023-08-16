@@ -1,10 +1,12 @@
 
+<?php $CONTACTS = getContacts(); ?>
 <footer class="footer" id="contacts" data-watch="navigator">
   <div class="footer__body">
     <div class="logo">
       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
-      <span class="license"><?=php echo $CONTACTS['license']; ?></span>
+      <span class="license"><?php echo $CONTACTS['license']; ?></span>
     </div>
+
     <div class="last-post">
       <h3 class="last-post__heading footer-title">RECENT POSTS</h3>
 
@@ -35,14 +37,14 @@
     </div>
     <div class="contact">
       <h3 class="contacts__title footer-title">CONTACT INFO</h3>
-      <a href="tel:<?=php echo $CONTACTS['phone_one']; ?>" class="contacts__link">
-        <span><?=php echo $CONTACTS['phone_one']; ?></span>
+      <a href="tel:<?php echo $CONTACTS['phone_one']; ?>" class="contacts__link">
+        <span><?php echo $CONTACTS['phone_one']; ?></span>
       </a>
-      <a href="tel:<?=php echo $CONTACTS['phone_two']; ?>" class="contacts__link">
-        <span><?=php echo $CONTACTS['phone_two']; ?></span>
+      <a href="tel:<?php echo $CONTACTS['phone_two']; ?>" class="contacts__link">
+        <span><?php echo $CONTACTS['phone_two']; ?></span>
       </a>
-      <a href="mailto:<?=php echo $CONTACTS['email']; ?>" class="contacts__link">
-        <span><?=php echo $CONTACTS['email']; ?></span>
+      <a href="mailto:<?php echo $CONTACTS['email']; ?>" class="contacts__link">
+        <span><?php echo $CONTACTS['email']; ?></span>
       </a>
 
       <a class="contacts__link" href="https://flatrateremodeling.semempires.com/privacy-policy">Privacy Policy</a>
@@ -64,10 +66,10 @@
     <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
-        <a class="sns__link" href="<?=php echo $CONTACTS['facebook_link']; ?>"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="sns__link" href="<?=php echo $CONTACTS['twitter_link']; ?>"><i class="fa-brands fa-twitter"></i></a>
-        <a class="sns__link" href="<?=php echo $CONTACTS['google_plus_link']; ?>"><i class="fa-brands fa-google"></i></a>
-        <a class="sns__link" href="<?=php echo $CONTACTS['instagram_link']; ?>"><i class="fa-brands fa-instagram"></i></a>
+        <a class="sns__link" href="<?php echo $CONTACTS['facebook_link']; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="sns__link" href="<?php echo $CONTACTS['twitter_link']; ?>"><i class="fa-brands fa-twitter"></i></a>
+        <a class="sns__link" href="<?php echo $CONTACTS['google_plus_link']; ?>"><i class="fa-brands fa-google"></i></a>
+        <a class="sns__link" href="<?php echo $CONTACTS['instagram_link']; ?>"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </div>
