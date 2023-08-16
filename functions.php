@@ -189,6 +189,28 @@ add_action( 'init', function () {
 		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks',
 	] );
 
+	register_post_type( 'Contacts', [
+			'label'  => 'Contacts',
+			'labels' => [
+				'name'               => 'Contacts', // основное название для типа записи
+				'singular_name'      => 'Contact', // название для одной записи этого типа
+				'add_new'            => 'Add Contact', // для добавления новой записи
+				'add_new_item'       => 'Adding Contact', // заголовка у вновь создаваемой записи в админ-панели.
+				'edit_item'          => 'Contact Editing', // для редактирования типа записи
+				'new_item'           => 'New Contact', // текст новой записи
+				'view_item'          => 'Watch the Contact', // для просмотра записи этого типа.
+				'search_items'       => 'Search for a Contact', // для поиска по этим типам записи
+				'not_found'          => 'Contact not found', // если в результате поиска ничего не было найдено
+				'not_found_in_trash' => 'Not found in cart', // если не было найдено в корзине
+				'menu_name'          => 'Contacts', // название меню
+			],
+			'public'              => false,
+			'show_ui'             => true, // зависит от public
+			'menu_icon'           => 'dashicons-tickets-alt',
+			'supports'            => [ 'title'],  
+
+	] );
+
 });
 
 function getGallery() {
@@ -341,6 +363,25 @@ function getFoorReviews() {
 
 	return $reviews;
 }
+
+function getContacts() {
+		$args = array(
+			'post_type' => 'Contacts',
+			'orderby'   => 'date',
+			'order'     => 'ASC',
+			'numberposts' => 1,
+		);
+
+		$contacts = [];
+
+		foreach(get_posts($args) as $post) {
+			$con = get_fields($post->ID);
+
+			$contacts[] = $con;
+		}
+
+		return $contacts[0];
+	}
 
 
 //======================SVG===========================================//
