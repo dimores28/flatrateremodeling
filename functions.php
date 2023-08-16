@@ -300,6 +300,27 @@ function getReviews() {
 	return $reviews;
 }
 
+function getFoorReviews() {
+	$args = array(
+		'post_type' => 'Reviews',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => 4,
+	);
+
+	$reviews = [];
+
+	foreach(get_posts($args) as $post) {
+		$review = get_fields($post->ID);
+		$review['title'] = $post->post_title;
+		$review['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+
+		$reviews[] = $review;
+	}
+
+	return $reviews;
+}
+
 
 //======================SVG===========================================//
 add_filter( 'upload_mimes', 'svg_upload_allow' );
