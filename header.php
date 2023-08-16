@@ -55,7 +55,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    
    <?php wp_head(); ?>
-   <?php $CONTACTS = getContacts(); ?>
+   <?php $BASICINFO = getContacts(); ?>
 </head>
 <body>
 
@@ -67,19 +67,19 @@
             <span>
 							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
             </span>
-            <?php echo $CONTACTS['adress']; ?>
+            <?php echo $BASICINFO['adress']; ?>
           </a>
         </li>
         <li class="ceil-border">
-          <a href="mailto:<?php echo $CONTACTS['email']; ?>" target="_blank">
+          <a href="mailto:<?php echo $BASICINFO['email']; ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
-            <?php echo $CONTACTS['email']; ?>
+            <?php echo $BASICINFO['email']; ?>
           </a>
         </li>
         <li>
-          <a href="tel:<?php echo $CONTACTS['phone_one']; ?>" target="_blank">
+          <a href="tel:<?php echo $BASICINFO['phone_one']; ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-phone-alt"></i>
             </span>
@@ -90,22 +90,22 @@
 
       <ul class="header__right">
         <li>
-          <a href="<?php echo $CONTACTS['facebook_link']; ?>" class="" target="_blank">
+          <a href="<?php echo $BASICINFO['facebook_link']; ?>" class="" target="_blank">
 						<i class="fab fa-facebook-f"></i>					
           </a>
         </li>
         <li>
-          <a href="<?php echo $CONTACTS['twitter_link']; ?>" class="" target="_blank">
+          <a href="<?php echo $BASICINFO['twitter_link']; ?>" class="" target="_blank">
 						<i class="fab fa-twitter"></i>			
           </a>
         </li>
         <li>
-          <a href="<?php echo $CONTACTS['google_plus_link']; ?>" class="" target="_blank">
+          <a href="<?php echo $BASICINFO['google_plus_link']; ?>" class="" target="_blank">
 						<i class="fab fa-google"></i>			
           </a>
         </li>
         <li>
-          <a href="<?php echo $CONTACTS['instagram_link']; ?>" class="" target="_blank">
+          <a href="<?php echo $BASICINFO['instagram_link']; ?>" class="" target="_blank">
 						<i class="fab fa-instagram"></i>				
           </a>
         </li>

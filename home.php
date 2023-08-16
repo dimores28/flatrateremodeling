@@ -5,7 +5,7 @@ Template Name: Home
 ?>
 
 <?php get_header();?>
-
+<?php $BASICINFO = getContacts(); ?>
 <section class="hero-section">
     <!-- Swiper -->
     <div class="swiper main-slider">
@@ -68,8 +68,9 @@ Template Name: Home
 
 <div class="video-section">
   <div class="video-section__video">
-    <iframe src="https://player.vimeo.com/video/324901939?h=602374f16d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        <p><a href="https://vimeo.com/324901939">Jocelyn &amp; Fernando Rivero. Studio City, CA</a> from <a href="https://vimeo.com/user3235268">Roberto Garcia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    <?php echo $BASICINFO['video-section']; ?>
+    <!-- <iframe src="https://player.vimeo.com/video/324901939?h=602374f16d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/324901939">Jocelyn &amp; Fernando Rivero. Studio City, CA</a> from <a href="https://vimeo.com/user3235268">Roberto Garcia</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
   </div>
 </div>
 

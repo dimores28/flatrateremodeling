@@ -189,20 +189,20 @@ add_action( 'init', function () {
 		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks',
 	] );
 
-	register_post_type( 'Contacts', [
-			'label'  => 'Contacts',
+	register_post_type( 'Basic-info', [
+			'label'  => 'Basic-info',
 			'labels' => [
-				'name'               => 'Contacts', // основное название для типа записи
-				'singular_name'      => 'Contact', // название для одной записи этого типа
-				'add_new'            => 'Add Contact', // для добавления новой записи
-				'add_new_item'       => 'Adding Contact', // заголовка у вновь создаваемой записи в админ-панели.
-				'edit_item'          => 'Contact Editing', // для редактирования типа записи
-				'new_item'           => 'New Contact', // текст новой записи
-				'view_item'          => 'Watch the Contact', // для просмотра записи этого типа.
-				'search_items'       => 'Search for a Contact', // для поиска по этим типам записи
-				'not_found'          => 'Contact not found', // если в результате поиска ничего не было найдено
+				'name'               => 'Basic-info', // основное название для типа записи
+				'singular_name'      => 'Basic-info', // название для одной записи этого типа
+				'add_new'            => 'Add Basic-info', // для добавления новой записи
+				'add_new_item'       => 'Adding Basic-info', // заголовка у вновь создаваемой записи в админ-панели.
+				'edit_item'          => 'Basic-info Editing', // для редактирования типа записи
+				'new_item'           => 'New Basic-info', // текст новой записи
+				'view_item'          => 'Watch the Basic-info', // для просмотра записи этого типа.
+				'search_items'       => 'Search for a Basic-info', // для поиска по этим типам записи
+				'not_found'          => 'Basic-info not found', // если в результате поиска ничего не было найдено
 				'not_found_in_trash' => 'Not found in cart', // если не было найдено в корзине
-				'menu_name'          => 'Contacts', // название меню
+				'menu_name'          => 'Basic-info', // название меню
 			],
 			'public'              => false,
 			'show_ui'             => true, // зависит от public
@@ -366,7 +366,7 @@ function getFoorReviews() {
 
 function getContacts() {
 	$args = array(
-		'post_type' => 'Contacts',
+		'post_type' => 'Basic-info',
 		'orderby'   => 'date',
 		'order'     => 'ASC',
 		'numberposts' => 1,
