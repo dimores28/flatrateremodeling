@@ -168,6 +168,27 @@ add_action( 'init', function () {
 		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks',
 	] );
 
+	register_post_type( 'Services section', [
+		'label'  => 'Services section',
+		'labels' => [
+			'name'               => 'Service', // основное название для типа записи
+			'singular_name'      => 'Service', // название для одной записи этого типа
+			'add_new'            => 'Add a Service', // для добавления новой записи
+			'add_new_item'       => 'Adding Service', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on Service', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found Service', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in Service', // если не было найдено в корзине
+			'menu_name'          => 'Services section', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-admin-tools',
+		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks',
+	] );
+
 	register_post_type( 'Contacts', [
 			'label'  => 'Contacts',
 			'labels' => [
@@ -188,7 +209,7 @@ add_action( 'init', function () {
 			'menu_icon'           => 'dashicons-tickets-alt',
 			'supports'            => [ 'title'],  
 
-		] );
+	] );
 
 });
 
@@ -344,23 +365,23 @@ function getFoorReviews() {
 }
 
 function getContacts() {
-		$args = array(
-			'post_type' => 'Contacts',
-			'orderby'   => 'date',
-			'order'     => 'ASC',
-			'numberposts' => 1,
-		);
+	$args = array(
+		'post_type' => 'Contacts',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => 1,
+	);
 
-		$contacts = [];
+	$contacts = [];
 
-		foreach(get_posts($args) as $post) {
-			$con = get_fields($post->ID);
+	foreach(get_posts($args) as $post) {
+		$con = get_fields($post->ID);
 
-			$contacts[] = $con;
-		}
-
-		return $contacts[0];
+		$contacts[] = $con;
 	}
+
+	return $contacts[0];
+}
 
 	$CONTACTS = getContacts();
 
