@@ -280,8 +280,10 @@ Template Name: Home
     </div>
   </section>
 
+<div class="logoshowcase">
+  <?php echo do_shortcode('[logoshowcase arrows="false" autoplay="false" limit="4" extra_class="logo-slider"]'); ?>
+</div>
 
-      <?php echo do_shortcode('[logoshowcase arrows="false" autoplay="false" limit="4" extra_class="logo-slider"]'); ?>
 
       <section class="consultation" style="margin-top:30px;">
           <h2 class="consultation__heding">

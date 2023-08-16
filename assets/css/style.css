@@ -3082,3 +3082,8 @@ body.lock {
   transition: color 300ms ease-out;
   cursor: pointer;
 }
+/*-----------------------------------------------------------------------------------------------------*/
+.logoshowcase {
+  max-width: 1200px;
+  margin: 0 auto;
+}
