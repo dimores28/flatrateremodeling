@@ -95,7 +95,7 @@
           </a>
         </li>
         <li>
-          <a href="<?php echo $CONTACTS['twitter_link']; ?>">" class="" target="_blank">
+          <a href="<?php echo $CONTACTS['twitter_link']; ?>" class="" target="_blank">
 						<i class="fab fa-twitter"></i>			
           </a>
         </li>
