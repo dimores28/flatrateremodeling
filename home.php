@@ -102,12 +102,12 @@ Template Name: Home
 </section>
 
 
- <section class="main-gallery">
+      <section class="main-gallery">
         <h2 class="gallery__header">Gallery</h2>
         <div class="gallery__actions">
           <a href="https://flatrateremodeling.semempires.com/gallery/" class="gallery__linck">View Gallery</a>
         </div>
-    
+
         <div class="gallery__sliders">
           <div class="swiper gallery-slider">
             <div class="swiper-wrapper">
@@ -125,7 +125,7 @@ Template Name: Home
 
             </div>
           </div>
-    
+
           <div class="swiper gallery-slider">
             <div class="swiper-wrapper">
               <!-- Slides -->

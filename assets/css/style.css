@@ -3002,7 +3002,7 @@ body.lock {
   display: flex;
   gap: 16px;
   text-align: left;
-  font-family: "Open sans";
+  font-family: Raleway, sans-serif;
   font-size: 14px;
   line-height: 1.4em;
 }
@@ -3045,7 +3045,7 @@ body.lock {
 }
 
 .review__text {
-  font-family: "Open sans";
+  font-family: Montserrat, sans-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-height: 21.75px;
@@ -3072,7 +3072,7 @@ body.lock {
 
 .review__link {
   position: relative;
-  font-family: "Open sans";
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.4em;
   white-space: nowrap;
