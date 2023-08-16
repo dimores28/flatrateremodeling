@@ -147,6 +147,27 @@ add_action( 'init', function () {
 
 	] );
 
+	register_post_type( 'Reviews', [
+		'label'  => 'Reviews',
+		'labels' => [
+			'name'               => 'Reviews', // основное название для типа записи
+			'singular_name'      => 'Review', // название для одной записи этого типа
+			'add_new'            => 'Add a review', // для добавления новой записи
+			'add_new_item'       => 'Adding review', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Add-on Editing', // для редактирования типа записи
+			'new_item'           => 'New addition', // текст новой записи
+			'view_item'          => 'Watch add-on', // для просмотра записи этого типа.
+			'search_items'       => 'Found Review', // для поиска по этим типам записи
+			'not_found'          => 'Not found', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Not found in cart', // если не было найдено в корзине
+			'menu_name'          => 'Reviews', // название меню
+		],
+		'public'              => false,
+		'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-admin-page',
+		'supports'            => [ 'title', 'thumbnail'],  // 'title','editor','author','thumbnail','excerpt','trackbacks',
+	] );
+
 });
 
 function getGallery() {
@@ -257,6 +278,27 @@ function getSliderRight() {
 	return $slider;
 }
 
+
+function getReviews() {
+	$args = array(
+		'post_type' => 'Reviews',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
+
+	$reviews = [];
+
+	foreach(get_posts($args) as $post) {
+		$review = get_fields($post->ID);
+		$review['title'] = $post->post_title;
+		$review['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+
+		$reviews[] = $review;
+	}
+
+	return $reviews;
+}
 
 
 //======================SVG===========================================//
