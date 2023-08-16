@@ -3116,7 +3116,7 @@ body.lock {
   }
 }
 
-.testimonials-reviews__item::before {
+/* .testimonials-reviews__item::before {
   position: absolute;
   content: '';
   top: 0;
@@ -3127,7 +3127,7 @@ body.lock {
   background-size: 86%;
   opacity: 0.15;
   pointer-events: none;
-}
+} */
 
 
 .testimonials-reviews__head {
