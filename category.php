@@ -5,7 +5,7 @@ Template Name: Category
 ?>
 
 <pre>
-        <?php print_r(getReviews()); ?> 
+        <?php print_r(getSlider()); ?> 
 </pre>
 
 <pre style="margin-top:30px;">
