@@ -66,12 +66,13 @@ Template Name: Home
 <main class="main">
    <!-- <?php  echo do_shortcode('[smartslider3 slider="2"]');  ?> -->
 
-   <div class="video-section">
-      <div class="video-section__video">
-        <iframe src="https://player.vimeo.com/video/324901939?h=602374f16d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <p><a href="https://vimeo.com/324901939">Jocelyn &amp; Fernando Rivero. Studio City, CA</a> from <a href="https://vimeo.com/user3235268">Roberto Garcia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-      </div>
-   </div>
+<div class="video-section">
+  <div class="video-section__video">
+    <iframe src="https://player.vimeo.com/video/324901939?h=602374f16d" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/324901939">Jocelyn &amp; Fernando Rivero. Studio City, CA</a> from <a href="https://vimeo.com/user3235268">Roberto Garcia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </div>
+</div>
+
 <section class="services">
   <h2 class="consultation__heding services__heading">
     Products & Services
@@ -79,98 +80,23 @@ Template Name: Home
   </h2>
 
   <div class="services__content">
-
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/remodeling"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1312027010.jpg"  alt="service image">
+    <?php foreach(getServicesSection() as $service) {?>
+      <div class="services__item">
+        <div class="services__img">
+          <a href="<?php echo $service["services_linck"]; ?>"> 
+            <img src="<?php echo $service["img"]; ?>"  alt="service image">
+          </a>
+        </div>
+        <h3 class="services__title">
+          <a href="<?php echo $service["services_linck"]; ?>">
+            <?php echo $service["title"]; ?>
+          </a>
+        </h3>
+        <a href="<?php echo $service["services_linck"]; ?>" class="services__details">
+          MORE DETAILS
         </a>
       </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/remodeling">
-          Complete Kitchen Design & Remodeling
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/remodeling" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/energy-efficient-products"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-494417257.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/energy-efficient-products">
-          Energy Efficient Products
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/energy-efficient-products" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/sun-rooms-patio-enclosures"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1365015407.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/sun-rooms-patio-enclosures">
-          Sun Rooms & Patio Enclosures
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/sun-rooms-patio-enclosures" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/bathroom-design-remodeling"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1172894166.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/bathroom-design-remodeling">
-          Complete Bathroom Design & Remodeling
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/bathroom-design-remodeling" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/general-home-renovations"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1453183714.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/general-home-renovations">
-          General Home Renovations
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/general-home-renovations" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-    <div class="services__item">
-      <div class="services__img">
-        <a href="https://flatrateremodeling.semempires.com/additions-new-construction"> 
-          <img src="https://flatrateremodeling.semempires.com/wp-content/themes/flatrateremodeling/assets/img/iStock-1398135990.jpg"  alt="service image">
-        </a>
-      </div>
-      <h3 class="services__title">
-        <a href="https://flatrateremodeling.semempires.com/additions-new-construction">
-          Additions & New Construction
-        </a>
-      </h3>
-      <a href="https://flatrateremodeling.semempires.com/additions-new-construction" class="services__details">
-        MORE DETAILS
-      </a>
-    </div>
-
+      <?php }?>
   </div>
 
 </section>

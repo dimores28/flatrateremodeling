@@ -383,6 +383,27 @@ function getContacts() {
 	return $contacts[0];
 }
 
+function getServicesSection() {
+	$args = array(
+		'post_type' => 'Services section',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => -1,
+	);
+
+	$services = [];
+
+	foreach(get_posts($args) as $post) {
+		$service = get_fields($post->ID);
+		$service['title'] = $post->post_title;
+		$service['img'] = get_the_post_thumbnail_url($post->ID, 'thumbnail');
+
+		$services[] = $service;
+	}
+
+	return $services;
+}
+
 
 
 //======================SVG===========================================//
