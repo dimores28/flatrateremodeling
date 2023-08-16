@@ -66,19 +66,19 @@
             <span>
 							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
             </span>
-             Agoura Rd Unit 102-406 Calabasas
+            <?= get_field("adress"); ?>
           </a>
         </li>
         <li class="ceil-border">
-          <a href="#" target="_blank">
+          <a href="mailto:<?= get_field("email"); ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
-            tal@flatrateremodeling.com
+            <?= get_field("email"); ?>
           </a>
         </li>
         <li>
-          <a href="tel:(888) 608-3330" target="_blank">
+          <a href="tel:<?= get_field("phone_one"); ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-phone-alt"></i>
             </span>
@@ -89,22 +89,22 @@
 
       <ul class="header__right">
         <li>
-          <a href="https://www.facebook.com/flatrateremodelingla" class="" target="_blank">
+          <a href="<?= get_field("facebook_link"); ?>" class="" target="_blank">
 						<i class="fab fa-facebook-f"></i>					
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/flatrateremodel" class="" target="_blank">
+          <a href="<?= get_field("twitter_link"); ?>" class="" target="_blank">
 						<i class="fab fa-twitter"></i>			
           </a>
         </li>
         <li>
-          <a href="https://www.google.com/#q=flat+rate+remodeling" class="" target="_blank">
+          <a href="<?= get_field("google_plus_link"); ?>" class="" target="_blank">
 						<i class="fab fa-google"></i>			
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/flatrateremodeling" class="" target="_blank">
+          <a href="<?= get_field("instagram_link"); ?>" class="" target="_blank">
 						<i class="fab fa-instagram"></i>				
           </a>
         </li>
