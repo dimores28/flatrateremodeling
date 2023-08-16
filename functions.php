@@ -362,6 +362,8 @@ function getContacts() {
 		return $contacts[0];
 	}
 
+	$CONTACTS = getContacts();
+
 
 //======================SVG===========================================//
 add_filter( 'upload_mimes', 'svg_upload_allow' );

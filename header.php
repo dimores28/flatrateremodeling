@@ -66,19 +66,19 @@
             <span>
 							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>
             </span>
-            <?= get_field("adress"); ?>
+            <?=php echo $CONTACTS['adress']; ?>
           </a>
         </li>
         <li class="ceil-border">
-          <a href="mailto:<?= get_field("email"); ?>" target="_blank">
+          <a href="mailto:<?=php echo $CONTACTS['email']; ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-envelope"></i>
             </span>
-            <?= get_field("email"); ?>
+            <?=php echo $CONTACTS['email']; ?>
           </a>
         </li>
         <li>
-          <a href="tel:<?= get_field("phone_one"); ?>" target="_blank">
+          <a href="tel:<?=php echo $CONTACTS['phone_one']; ?>" target="_blank">
             <span>
 							<i aria-hidden="true" class="fas fa-phone-alt"></i>
             </span>
@@ -89,22 +89,22 @@
 
       <ul class="header__right">
         <li>
-          <a href="<?= get_field("facebook_link"); ?>" class="" target="_blank">
+          <a href="<?=php echo $CONTACTS['facebook_link']; ?>" class="" target="_blank">
 						<i class="fab fa-facebook-f"></i>					
           </a>
         </li>
         <li>
-          <a href="<?= get_field("twitter_link"); ?>" class="" target="_blank">
+          <a href="<?=php echo $CONTACTS['twitter_link']; ?>">" class="" target="_blank">
 						<i class="fab fa-twitter"></i>			
           </a>
         </li>
         <li>
-          <a href="<?= get_field("google_plus_link"); ?>" class="" target="_blank">
+          <a href="<?=php echo $CONTACTS['google_plus_link']; ?>" class="" target="_blank">
 						<i class="fab fa-google"></i>			
           </a>
         </li>
         <li>
-          <a href="<?= get_field("instagram_link"); ?>" class="" target="_blank">
+          <a href="<?=php echo $CONTACTS['instagram_link']; ?>" class="" target="_blank">
 						<i class="fab fa-instagram"></i>				
           </a>
         </li>
