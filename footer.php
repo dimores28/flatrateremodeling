@@ -3,7 +3,7 @@
   <div class="footer__body">
     <div class="logo">
       <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="logo" class="logo__img" />
-      <span class="license">License # 996391</span>
+      <span class="license"><?= get_field("license"); ?></span>
     </div>
     <div class="last-post">
       <h3 class="last-post__heading footer-title">RECENT POSTS</h3>
@@ -35,14 +35,14 @@
     </div>
     <div class="contact">
       <h3 class="contacts__title footer-title">CONTACT INFO</h3>
-      <a href="tel:888 608 3330" class="contacts__link">
-        <span>(888) 608-3330</span>
+      <a href="tel:<?= get_field("phone_one"); ?>" class="contacts__link">
+        <span><?= get_field("phone_one"); ?></span>
       </a>
-      <a href="tel:323 761 7540" class="contacts__link">
-        <span>(323) 761-7540</span>
+      <a href="tel:<?= get_field("phone_two"); ?>" class="contacts__link">
+        <span><?= get_field("phone_two"); ?></span>
       </a>
-      <a href="mailto:tal@flatrateremodeling.com" class="contacts__link">
-        <span>tal@flatrateremodeling.com</span>
+      <a href="mailto:<?= get_field("email"); ?>" class="contacts__link">
+        <span><?= get_field("email"); ?></span>
       </a>
 
       <a class="contacts__link" href="https://flatrateremodeling.semempires.com/privacy-policy">Privacy Policy</a>
@@ -64,10 +64,10 @@
     <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>
       <div class="sns">
-        <a class="sns__link" href="https://www.facebook.com/flatrateremodelingla"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="sns__link" href="https://twitter.com/flatrateremodel"><i class="fa-brands fa-twitter"></i></a>
-        <a class="sns__link" href="https://www.google.com/#q=flat+rate+remodeling"><i class="fa-brands fa-google"></i></a>
-        <a class="sns__link" href="https://www.instagram.com/flatrateremodeling"><i class="fa-brands fa-instagram"></i></a>
+        <a class="sns__link" href="<?= get_field("facebook_link"); ?>"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="sns__link" href="<?= get_field("twitter_link"); ?>"><i class="fa-brands fa-twitter"></i></a>
+        <a class="sns__link" href="<?= get_field("google_plus_link"); ?>"><i class="fa-brands fa-google"></i></a>
+        <a class="sns__link" href="<?= get_field("instagram_link"); ?>"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </div>
