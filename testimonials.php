@@ -20,7 +20,7 @@ Template Name: Testimonials
         <?php  the_content(); ?>
 
         <div class="testimonials-reviews">
-            <?php foreach(getReviews() as $review) {?>
+            <?php foreach(getFoorReviews() as $review) {?>
                 <div class="testimonials-reviews__item">
                     <div class="testimonials-reviews__head">
                         <div class="testimonials-reviews__photo">

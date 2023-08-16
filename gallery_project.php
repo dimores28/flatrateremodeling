@@ -68,8 +68,23 @@ if(!empty($id)) {
      <?php } ?>   
 
      <div class="reviews-gallery">
-      <?php echo do_shortcode('[trustindex data-widget-id=f6802bd185c2719c5e7696a1893]'); ?>
+        <?php foreach(getFoorReviews() as $review) {?>
+            <div class="reviews-gallery__item">
+                <div class="reviews-gallery__img">
+                   <img src="<?php echo $review["img"];?>" alt="photo" width="70" height="70" />
+                </div>
+                <div class="reviews-gallery__body">
+                  <p class="reviews-gallery__text">
+                      <?php echo $review["feedback_text"];?>
+                  </p>
+                  <h3 class="reviews-gallery__user">
+                      <?php echo $review["title"];?>
+                  </h3>
+                </div>
+            </div>
+        <?php }?>
      </div>
+
     </div>
     <aside class="side-column-section__aside ">
     <div class="aside-form" style="padding: 0px; margin-bottom:20px;">
