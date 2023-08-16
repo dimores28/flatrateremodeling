@@ -365,23 +365,23 @@ function getFoorReviews() {
 }
 
 function getContacts() {
-		$args = array(
-			'post_type' => 'Contacts',
-			'orderby'   => 'date',
-			'order'     => 'ASC',
-			'numberposts' => 1,
-		);
+	$args = array(
+		'post_type' => 'Contacts',
+		'orderby'   => 'date',
+		'order'     => 'ASC',
+		'numberposts' => 1,
+	);
 
-		$contacts = [];
+	$contacts = [];
 
-		foreach(get_posts($args) as $post) {
-			$con = get_fields($post->ID);
+	foreach(get_posts($args) as $post) {
+		$con = get_fields($post->ID);
 
-			$contacts[] = $con;
-		}
-
-		return $contacts[0];
+		$contacts[] = $con;
 	}
+
+	return $contacts[0];
+}
 
 
 //======================SVG===========================================//
