@@ -135,36 +135,13 @@
           <li class="menu__item menu__item_list dropdown">
             <a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
             <ul class="submenu">
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/remodeling/">
-                  Kitchen Design & Remodeling
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/energy-efficient-products/">
-                  Energy Efficient Products
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/sun-rooms-patio-enclosures/">
-                  Sun Rooms & Patio Enclosures
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/bathroom-design-remodeling/">
-                  Bathroom Design & Remodeling
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/general-home-renovations/">
-                  General Home Renovations
-                </a>
-              </li>
-              <li class="submenu__item">
-                <a href="https://flatrateremodeling.semempires.com/additions-new-construction/">
-                  Additions & New Construction
-                </a>
-              </li>
+              <?php foreach(getServicesSection() as $service) {?>
+                <li class="submenu__item">
+                  <a href="<?php echo $service["services_linck"]; ?>">
+                    <?php echo $service["title"]; ?>
+                  </a>
+                </li>
+              <?php }?>
             </ul>
           </li>
           <li class="menu__item">
