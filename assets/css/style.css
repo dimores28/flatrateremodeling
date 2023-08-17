@@ -3194,3 +3194,9 @@ body.lock {
   font-weight: 600;
   line-height: 24px;
 }
+
+.inst-widget {
+  padding: 10px 15px;
+  background: #000;
+  height: 190px;
+}
