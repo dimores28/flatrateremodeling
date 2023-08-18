@@ -815,7 +815,7 @@ input::placeholder {
   top: 30px;
   background: #000;
   z-index: 20;
-  width: 280px;
+  width: 354px;
   padding: 0;
   display: none;
 }
@@ -1209,7 +1209,7 @@ input::placeholder {
 }
 
 .services__item {
-  flex: 1 1 calc(100% / 3 - 14px);
+  width: calc(100% / 3 - 14px);
   margin-bottom: 20px;
 }
 
@@ -1258,13 +1258,13 @@ input::placeholder {
 
 @media (max-width: 920px) {
   .services__item {
-    flex: 1 1 calc(100% / 2 - 14px);
+    width: calc(100% / 2 - 14px);
   }
 }
 
 @media (max-width: 574px) {
   .services__item {
-    flex: 1 1 100%;
+    width: 100%;
   }
 
   .services__img img {
@@ -3144,7 +3144,7 @@ body.lock {
   }
 }
 
-.testimonials-reviews__item::before {
+/* .testimonials-reviews__item::before {
   position: absolute;
   content: "";
   top: 0;
@@ -3155,7 +3155,7 @@ body.lock {
   background-size: 86%;
   opacity: 0.15;
   pointer-events: none;
-}
+} */
 
 .testimonials-reviews__head {
   display: flex;
