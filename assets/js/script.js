@@ -72,9 +72,9 @@ const gallerySlider = new Swiper(".gallery-slider", {
   speed: 800,
 });
 
-const header = document.querySelector(".header");
-const body = document.querySelector("body");
-body.style.paddingTop = `${header.offsetHeight}px`;
+// const header = document.querySelector(".header");
+// const body = document.querySelector("body");
+// body.style.paddingTop = `${header.offsetHeight}px`;
 
 function getBodyScrollTop() {
   return (
