@@ -33,7 +33,7 @@ Template Name: Home
                       <a href="https://flatrateremodeling.semempires.com/contact-us/" class="hero__linck">Contact Us</a>
                     </div>
                   </div>
-                  <div class="hero__right animate__animated animate__fadeInRight">
+                  <!-- <div class="hero__right animate__animated animate__fadeInRight">
                     <div class="feedback feedback-black">
                       <form class="feedback__form " id="smallForm">
                         <div class="form__loader"><span class="loader"></span></div>
@@ -48,7 +48,7 @@ Template Name: Home
                         <input type="submit" class="btn form-btn" value="Send" />
                       </form>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               <?php } ?>
 
