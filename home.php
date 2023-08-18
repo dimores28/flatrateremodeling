@@ -6,6 +6,10 @@ Template Name: Home
 
 <?php get_header();?>
 <?php $BASICINFO = getContacts(); ?>
+<div class="inst-widget">
+  <?php echo $BASICINFO["instagram_widget"]; ?>
+</div>
+
 <section class="hero-section">
     <!-- Swiper -->
     <div class="swiper main-slider">
