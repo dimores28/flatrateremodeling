@@ -3221,3 +3221,9 @@ body.lock {
   font-weight: 600;
   line-height: 24px;
 }
+
+.inst-widget {
+  background: #000;
+  padding-bottom: 14px;
+  margin-top: -4px;
+}
