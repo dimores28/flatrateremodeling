@@ -19,21 +19,21 @@ Template Name: Home
         <?php foreach(getSlider() as $slide) {?>
           <div class="swiper-slide">
             <div class="main-slider__img">
-              <?php if(!$count) { ?>
+              
                 <div class="hero">
-                  <div class="hero__left animate__animated animate__fadeInLeft">
-                    <div class="hero__title-wrap">
-                      <h1 class="hero__title">Residential & Commercial remodeling in Los Angeles</h1>
+                  <div class="hero__left">
+                    <div class="hero__title-wrap animate__animated animate__fadeInLeft">
+                      <h2 class="hero__title"><?php echo $slide['title'] ?></h2>
                     </div>
-                    <div class="hero__block">
+                    <hr class="animate__animated animate__fadeInLeft" color="#bb945b" size="6px" width="150px"  />
+                    <div class="hero__block animate__animated animate__fadeInLeft">
                       <div class="hero__text">
-                        We have the experience,passion and resources to make your project come to life while running
-                        smoothly
+                        <?php echo $slide["slide_desc"] ; ?>
                       </div>
-                      <a href="https://flatrateremodeling.semempires.com/contact-us/" class="hero__linck">Contact Us</a>
+                      <a href="tel:<?php echo $BASICINFO['phone_one']; ?>" class="hero__linck">Contact Us</a>
                     </div>
                   </div>
-                  <!-- <div class="hero__right animate__animated animate__fadeInRight">
+                  <!-- <div class="hero__right animate__animated animate__fadeInRight animate__animated animate__fadeInLeft">
                     <div class="feedback feedback-black">
                       <form class="feedback__form " id="smallForm">
                         <div class="form__loader"><span class="loader"></span></div>
@@ -50,7 +50,7 @@ Template Name: Home
                     </div>
                   </div> -->
                 </div>
-              <?php } ?>
+              
 
               <img src="<?php echo $slide["slide_image"] ; ?>" width="1348" height="520" alt="slide" />
             </div>
