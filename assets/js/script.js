@@ -93,11 +93,11 @@ window.addEventListener("scroll", function (e) {
 
   const windowInnerWidth = document.documentElement.clientWidth;
 
-  if (getBodyScrollTop() > 200 && windowInnerWidth > 544) {
-    document.querySelector(".btn-up").style.display = "flex";
-  } else {
-    document.querySelector(".btn-up").style.display = "none";
-  }
+  // if (getBodyScrollTop() > 200 && windowInnerWidth > 544) {
+  //   document.querySelector(".btn-up").style.display = "flex";
+  // } else {
+  //   document.querySelector(".btn-up").style.display = "none";
+  // }
 });
 
 document.querySelector(".burger-btn").addEventListener("click", function () {
