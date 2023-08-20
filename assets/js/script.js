@@ -618,16 +618,12 @@ formRating();
 
 const reviewsSlider = new Swiper(".reviews__slider", {
   loop: true,
-
+  spaceBetween: 30,
+  centeredSlides: true,
   autoplay: {
-    // Пауза между прокруткой
-    delay: 3000,
-    // Закончить на последнем слайде
-    stopOnLastSlide: false,
-    // Отключить после ручного переключения
-    disableOnInteraction: true,
+    delay: 2500,
+    disableOnInteraction: false,
   },
-
   // Брейкпоінти
   breakpoints: {
     320: {

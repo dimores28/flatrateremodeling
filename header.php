@@ -5,9 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title><?php echo wp_get_document_title(); ?></title>
 
-   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-   <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/assets/img/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/assets/img/favicon-16x16.png">
+   <link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/assets/img/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
 
@@ -32,17 +32,6 @@
             width: 100%;
             height: 100%;
             border: 0;
-         }
-
-         .elementor-element .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .elementor-element .swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper-container .swiper-pagination-custom, .elementor-element .swiper-container .swiper-pagination-fraction, .elementor-element .swiper-container~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper-container~.swiper-pagination-custom, .elementor-element .swiper-container~.swiper-pagination-fraction, .elementor-element .swiper .swiper-horizontal>.swiper-pagination-bullets, .elementor-element .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper .swiper-pagination-custom, .elementor-element .swiper .swiper-pagination-fraction, .elementor-element .swiper~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper~.swiper-pagination-custom, .elementor-element .swiper~.swiper-pagination-fraction, .elementor-lightbox .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .elementor-lightbox .swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper-container .swiper-pagination-custom, .elementor-lightbox .swiper-container .swiper-pagination-fraction, .elementor-lightbox .swiper-container~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper-container~.swiper-pagination-custom, .elementor-lightbox .swiper-container~.swiper-pagination-fraction, .elementor-lightbox .swiper .swiper-horizontal>.swiper-pagination-bullets, .elementor-lightbox .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper .swiper-pagination-custom, .elementor-lightbox .swiper .swiper-pagination-fraction, .elementor-lightbox .swiper~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper~.swiper-pagination-custom, .elementor-lightbox .swiper~.swiper-pagination-fraction {
-               opacity: 0 !important;
-            }
-         
-
-         @media (max-width: 1024px){
-               .elementor-element .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .elementor-element .swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper-container .swiper-pagination-custom, .elementor-element .swiper-container .swiper-pagination-fraction, .elementor-element .swiper-container~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper-container~.swiper-pagination-custom, .elementor-element .swiper-container~.swiper-pagination-fraction, .elementor-element .swiper .swiper-horizontal>.swiper-pagination-bullets, .elementor-element .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper .swiper-pagination-custom, .elementor-element .swiper .swiper-pagination-fraction, .elementor-element .swiper~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-element .swiper~.swiper-pagination-custom, .elementor-element .swiper~.swiper-pagination-fraction, .elementor-lightbox .swiper-container .swiper-horizontal>.swiper-pagination-bullets, .elementor-lightbox .swiper-container .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper-container .swiper-pagination-custom, .elementor-lightbox .swiper-container .swiper-pagination-fraction, .elementor-lightbox .swiper-container~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper-container~.swiper-pagination-custom, .elementor-lightbox .swiper-container~.swiper-pagination-fraction, .elementor-lightbox .swiper .swiper-horizontal>.swiper-pagination-bullets, .elementor-lightbox .swiper .swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper .swiper-pagination-custom, .elementor-lightbox .swiper .swiper-pagination-fraction, .elementor-lightbox .swiper~.swiper-pagination-bullets.swiper-pagination-horizontal, .elementor-lightbox .swiper~.swiper-pagination-custom, .elementor-lightbox .swiper~.swiper-pagination-fraction {
-               opacity: 1 !important;
-            }
          }
 
          body {

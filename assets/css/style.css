@@ -1355,7 +1355,7 @@ input::placeholder {
   z-index: 99;
   right: 30px;
   bottom: 30px;
-  animation: ripple 1.5s linear infinite;
+  /* animation: ripple 1.5s linear infinite; */
   transition: all 0.7s ease;
 }
 .btn-call:hover {
@@ -3070,8 +3070,10 @@ body.lock {
   transition: all 0.3s ease-in;
 }
 
-.review:hover {
-  transform: translateY(-10px);
+@media (any-hover: hover) {
+  .review:hover {
+    transform: translateY(-10px);
+  }
 }
 
 .review__head {

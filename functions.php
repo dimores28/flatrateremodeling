@@ -17,8 +17,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	// // подключаем
 	// wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), 'null', true );
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array('swiper'), 'null', true );
+	// wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper-bundle.min.js', array(), 'null', true );
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array(), 'null', true );
 });
 
 
