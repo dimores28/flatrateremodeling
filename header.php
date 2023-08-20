@@ -44,6 +44,16 @@
                opacity: 1 !important;
             }
          }
+
+         body {
+          padding-top: 122px;
+         }
+
+         @media (max-width: 1024px){
+          body {
+            padding-top: 104px;
+          }
+         }
    </style>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
