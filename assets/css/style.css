@@ -3278,3 +3278,8 @@ body.lock {
   padding-bottom: 14px;
   margin-top: -4px;
 }
+
+
+.menu__item_active a{
+  color: #bb945b;
+}
