@@ -465,6 +465,7 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
   add_action('after_setup_theme', function() {
 	add_theme_support( 'menus' );
 	register_nav_menu( 'header-menu', 'header-menu' );
+	register_nav_menu( 'footer-menu', 'footer-menu' );
   });
 
   // Изменяем атрибут id у тега li
@@ -521,3 +522,30 @@ function nav_replace_wpse_189788($item_output, $item) {
   }
 
 add_filter('walker_nav_menu_start_el','nav_replace_wpse_189788',10,2);
+
+//footer menu
+
+// Изменяем атрибут id у тега li
+// add_filter( 'nav_menu_item_id', 'filter_menu_item_css_id', 10, 4 );
+// function filter_menu_item_css_id( $menu_id, $item, $args, $depth ) {
+// 	return $args->theme_location === 'locations' ? '' : $menu_id;
+// }
+
+
+//   // Изменяем атрибут class у тега li
+// add_filter( 'nav_menu_css_class', 'filter_nav_menu_css_classes', 10, 4 );
+// function filter_nav_menu_css_classes( $classes, $item, $args, $depth ) {
+// 	if ( $args->theme_location === 'footer-menu' ) {
+
+// 		$classes = [
+// 			'footer-menu__item',
+// 		];
+
+
+// 		if ( $item->current ) {
+// 			$classes[] = 'footer-menu__item_active';
+// 		}
+// 	}
+
+// 	return $classes;
+// }

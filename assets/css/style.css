@@ -3283,3 +3283,38 @@ body.lock {
 .menu__item_active a{
   color: #bb945b;
 }
+
+
+.footer__nav {
+    background-color: #222222;
+    padding: 10px 15px 20px 15px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.footer-menu .menu-item {
+  border-right: 1px solid #bb945b;
+  padding: 2px 6px;
+}
+
+.footer-menu .menu-item:last-child {
+  border-right: none;
+}
+
+.footer-menu .menu-item a {
+  color: #bb945b;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+}
+
+.footer-menu .menu-item a:hover {
+  color: #fff;
+}
