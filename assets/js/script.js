@@ -117,8 +117,9 @@ document.querySelector(".burger-btn").addEventListener("click", function () {
   }, 10);
 });
 
-document.querySelector(".dropdown").addEventListener("click", function () {
-  document.querySelector(".submenu").classList.toggle("_active");
+
+$(".dropdown").on('click', function () { 
+  $(this).children(".submenu").toggleClass("_active");
 });
 
 // document.addEventListener("DOMContentLoaded", () => {

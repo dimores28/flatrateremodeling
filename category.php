@@ -32,6 +32,19 @@ Template Name: Category
 
 <body> -->
 <?php get_header();?>
+
+<div style="background: #000; height: 50px;">
+  
+  <?php wp_nav_menu([
+    'theme_location' => 'header-menu',
+    'menu' => 'nav-menu',
+    'container' => 'nav',
+    'container_class' => 'header__nav',
+    // 'depth' => 1,
+  ]);?>
+
+</div>
+
 <section class="reviews" id="reviews">
     <div class="reviews__container">
       <h2 class="reviews__heading">What Our Customers Are Saying.</h2>

@@ -123,43 +123,13 @@
         </a>
       </div>
 
-      <nav class="header__nav">
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="https://flatrateremodeling.semempires.com/about/">About Us</a>
-          </li>
-          <li class="menu__item menu__item_list dropdown">
-            <a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>
-            <ul class="submenu">
-              <?php foreach(getServicesSection() as $service) {?>
-                <li class="submenu__item">
-                  <a href="<?php echo $service["services_linck"]; ?>">
-                    <?php echo $service["title"]; ?>
-                  </a>
-                </li>
-              <?php }?>
-            </ul>
-          </li>
-          <li class="menu__item">
-            <a href="https://flatrateremodeling.semempires.com/testimonials/">Testimonials</a>
-          </li>
-          <li class="menu__item">
-            <a href="https://flatrateremodeling.semempires.com/gallery/">Gallery</a>
-          </li>
-          <li class="menu__item">
-            <a href="https://flatrateremodeling.semempires.com/blog/">Blog</a>
-          </li>
-          <li class="menu__item">
-            <a href="https://flatrateremodeling.semempires.com/contact-us/">Contact us</a>
-          </li>
-          <li class="menu__item" style="padding-bottom: 20px;">
-            <a href="https://flatrateremodeling.semempires.com/locations/">Locations</a>
-          </li>
-        </ul>
-      </nav>
+      <?php wp_nav_menu([
+          'theme_location' => 'header-menu',
+          'menu' => 'nav-menu',
+          'container' => 'nav',
+          'container_class' => 'header__nav',
+          // 'depth' => 1,
+        ]);?>
 
       <a href="tel:tel:(888) 608-3330" class="call-btn">
         <i class="fas fa-phone-alt"></i>

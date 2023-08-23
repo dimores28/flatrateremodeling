@@ -946,12 +946,13 @@ input::placeholder {
 
 @media (max-width: 1024px) {
   .header.active {
-    margin-top: 0px;
+    margin-top: -26px;
+    padding-top: 0;
   }
 
-  .header__contacts {
+  /* .header__contacts {
     display: none;
-  }
+  } */
 
   .header__navigaton {
     justify-content: space-between;
@@ -1022,11 +1023,53 @@ input::placeholder {
   }
 }
 
-@media (max-width: 440px) {
-  .header__logo {
-    margin-left: 10%;
+
+@media (max-width: 700px){
+  .header__contacts ul li a {
+    font-size: 0;
+    margin-right: 0px;
+    margin-left: 0px;
+  } 
+
+  .header__contacts ul li a span {
+    font-size: 16px;
   }
+
+  .header__contacts .header__right a {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .header__contacts {
+    margin: 0 auto;
+  }
+
+  .inst-widget {
+    margin-top: -30px !important;
+  }
+
+  .ceil-border {
+      border-left: none;
+      border-right: none;
+  }
+
+  .header__contacts .header__left i {
+      margin-right: 0px;
+  }
+
+  .header__left {
+    gap: 6px;
+  }
+  .header__right {
+    gap: 8px;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+  }
+
 }
+
 
 /*--------------------------------------------------------------------------------------------*/
 @media (max-width: 1024px) {
@@ -3279,7 +3322,59 @@ body.lock {
   margin-top: -4px;
 }
 
-@media (max-width: 458px){
+
+.menu__item_active a{
+  color: #bb945b;
+}
+
+
+.footer__nav {
+    background-color: #222222;
+    padding: 10px 15px 20px 15px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+
+.footer-menu .menu-item {
+  border-right: 1px solid #bb945b;
+  padding: 2px 6px;
+}
+
+.footer-menu .menu-item:last-child {
+  border-right: none;
+}
+
+.footer-menu .menu-item a {
+  color: #bb945b;
+  transition: all 0.2s ease;
+  font-family: Roboto, sans-serif;
+}
+
+.footer-menu .menu-item a:hover {
+  color: #fff;
+}
+
+
+/* @media (max-width: 458px){
+  .envira-gallery-wrap .envira-gallery-public .envira-gallery-item img {
+      width: 100% !important;
+  }
+} */
+
+@media only screen and (max-width: 459px)
+{
+	.main-services .envira-gallery-wrap .envira-gallery-public.envira-gallery-3-columns .envira-gallery-item {
+		width: 100% !important;
+	}
+
   .envira-gallery-wrap .envira-gallery-public .envira-gallery-item img {
       width: 100% !important;
   }

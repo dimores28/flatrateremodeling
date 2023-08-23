@@ -62,6 +62,15 @@
     </div>
   </div>
 
+  <?php wp_nav_menu([
+          'theme_location' => 'footer-menu',
+          'menu' => 'locations',
+          'menu_class'      => 'footer-menu',
+          'container' => 'nav',
+          'container_class' => 'footer__nav',
+          'depth' => 1,
+        ]);?>
+
   <div class="copyright">
     <div class="copyright__body">
       <p class="copyright__text">© 2022 Flat Rate Remodeling, Inc.,</p>

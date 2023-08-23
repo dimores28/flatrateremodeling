@@ -449,3 +449,103 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 
 	return $data;
 }
+
+
+// function megamenu_override_default_theme($value) {
+// 	// change 'primary' to your menu location ID
+// 	if ( !isset($value['primary']['theme']) ) {
+// 	  $value['primary']['theme'] = 'flatrateremodeling'; // change my_custom_theme_key to the ID of your exported theme
+// 	}
+   
+// 	return $value;
+//   }
+//   add_filter('default_option_megamenu_settings', 'megamenu_override_default_theme');
+
+ 
+  add_action('after_setup_theme', function() {
+	add_theme_support( 'menus' );
+	register_nav_menu( 'header-menu', 'header-menu' );
+	register_nav_menu( 'footer-menu', 'footer-menu' );
+  });
+
+  // Изменяем атрибут id у тега li
+add_filter( 'nav_menu_item_id', 'filter_menu_item_css_id', 10, 4 );
+function filter_menu_item_css_id( $menu_id, $item, $args, $depth ) {
+	return $args->theme_location === 'header-menu' ? '' : $menu_id;
+}
+
+// Изменяем атрибут class у тега li
+add_filter( 'nav_menu_css_class', 'filter_nav_menu_css_classes', 10, 4 );
+function filter_nav_menu_css_classes( $classes, $item, $args, $depth ) {
+	if ( $args->theme_location === 'header-menu' ) {
+
+		if ($depth == 1) {
+			$classes = [
+				'submenu__item',
+			];
+		} else {
+			$classes = [
+				'menu__item',
+				'menu__item_list',
+				'dropdown'
+			];
+		}
+
+
+		if ( $item->current ) {
+			$classes[] = 'menu__item_active';
+		}
+	}
+
+	return $classes;
+}
+
+
+// Изменяет класс у вложенного ul
+add_filter( 'nav_menu_submenu_css_class', 'filter_nav_menu_submenu_css_class', 10, 3 );
+function filter_nav_menu_submenu_css_class( $classes, $args, $depth ) {
+	if ( $args->theme_location === 'header-menu' ) {
+		$classes = [
+			'submenu',
+		];
+	}
+
+	return $classes;
+}
+
+
+function nav_replace_wpse_189788($item_output, $item) {
+	if ('Services' == $item->title) {
+		return '<a href="#" class="dropbtn">Services <i class="fas fa-caret-down" style="margin-left: 4px;"></i></a>';
+	}
+	return $item_output;
+  }
+
+add_filter('walker_nav_menu_start_el','nav_replace_wpse_189788',10,2);
+
+//footer menu
+
+// Изменяем атрибут id у тега li
+// add_filter( 'nav_menu_item_id', 'filter_menu_item_css_id', 10, 4 );
+// function filter_menu_item_css_id( $menu_id, $item, $args, $depth ) {
+// 	return $args->theme_location === 'locations' ? '' : $menu_id;
+// }
+
+
+//   // Изменяем атрибут class у тега li
+// add_filter( 'nav_menu_css_class', 'filter_nav_menu_css_classes', 10, 4 );
+// function filter_nav_menu_css_classes( $classes, $item, $args, $depth ) {
+// 	if ( $args->theme_location === 'footer-menu' ) {
+
+// 		$classes = [
+// 			'footer-menu__item',
+// 		];
+
+
+// 		if ( $item->current ) {
+// 			$classes[] = 'footer-menu__item_active';
+// 		}
+// 	}
+
+// 	return $classes;
+// }
