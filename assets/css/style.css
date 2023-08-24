@@ -1031,9 +1031,14 @@ input::placeholder {
     margin-left: 0px;
   } 
 
-  .header__contacts ul li a span {
+  .header__contacts ul li:last-child a {
     font-size: 16px;
   }
+
+
+  /* .header__contacts ul li a span {
+    font-size: 16px;
+  } */
 
   .header__contacts .header__right a {
     font-size: 16px;
@@ -1058,7 +1063,7 @@ input::placeholder {
   }
 
   .header__left {
-    gap: 6px;
+    gap: 0px;
   }
   .header__right {
     gap: 8px;
@@ -3376,6 +3381,9 @@ body.lock {
 	}
 
   .envira-gallery-wrap .envira-gallery-public .envira-gallery-item img {
-      width: 100% !important;
+      /* object-fit: cover;
+      height: 200px; */
+      width: 320px !important;
+      height: auto;
   }
 }
